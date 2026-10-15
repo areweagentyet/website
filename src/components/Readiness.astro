@@ -1,0 +1,6 @@
+---
+import { readinessLabels, type Readiness } from '../lib/catalog';
+interface Props { value: Readiness }
+const { value } = Astro.props;
+---
+<span class={`readiness ${value}`}><span class="status-dot" aria-hidden="true"></span>{readinessLabels[value]}</span>

@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Icon from '../../components/Icon.astro';
+import { catalog } from '../../lib/catalog';
+---
+<Layout title="Compare solutions" active="compare">
+  <section class="page-intro container"><span class="eyebrow">YOUR SHORTLIST / UP TO 03 SOLUTIONS</span><h1>See the <em>tradeoffs.</em></h1><div class="intro-bottom"><p>Evidence side by side. Find the building blocks that fit your application.</p><a class="inline-link" href="/#catalog">Back to exploring <Icon name="arrow" size={18} /></a></div></section>
+  <section class="comparison-section container" data-comparison-page>
+    <div class="comparison-toolbar"><label class="compare-picker"><span>Add a building block</span><select id="compare-add"><option value="">Choose a solution…</option>{[...catalog].sort((a,b)=>a.name.localeCompare(b.name)).map(e => <option value={e.slug}>{e.name}</option>)}</select></label><div><button id="share-comparison" class="button">Copy comparison link <Icon name="diagonal" size={16} /></button><button id="clear-comparison-page" class="text-button">Clear all</button></div></div>
+    <p id="comparison-notice" class="notice" hidden></p>
+    <div id="share-fallback" hidden><label>Comparison URL<input readonly id="share-url" type="text" /></label></div>
+    <div id="comparison-empty" class="comparison-empty"><span class="empty-symbol" aria-hidden="true">↔</span><h2>A good decision starts<br />with a useful comparison.</h2><p>Choose up to three solutions above, or add them to your shortlist while exploring.</p><a class="button primary" href="?with=mem0,graphiti">Compare two memory approaches <Icon name="arrow" size={18} /></a><a class="inline-link" href="?with=langgraph,temporal,pydantic-ai">Or explore workflow foundations ↗</a></div>
+    <div id="comparison-content" hidden><p class="small muted comparison-note">Different building blocks can complement each other. Comparison does not imply they are interchangeable.</p><div class="comparison-scroll"><table id="comparison-table" class="comparison-table"><caption class="sr-only">Solution evidence comparison</caption></table></div></div>
+    <noscript><p class="notice">Enable JavaScript for interactive comparison. Every solution has a standalone page with its available evidence.</p></noscript>
+  </section>
+</Layout>
+<script>import '../../scripts/compare-page.ts';</script>

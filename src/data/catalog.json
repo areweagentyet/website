@@ -1,0 +1,3255 @@
+{
+  "snapshot": "2026-09-03 / 04 / 09; additions 2026-09-30, 2026-10-05",
+  "user_additions": [
+    "AtomCode",
+    "CrewAI",
+    "LangChain",
+    "Mastra",
+    "Pydantic AI",
+    "Rig",
+    "ZeroClaw"
+  ],
+  "learning_additions": [
+    "Agent Lightning",
+    "AHE",
+    "ART",
+    "Axolotl",
+    "DeepSpeed",
+    "DSPy",
+    "LLaMA-Factory",
+    "Megatron-LM",
+    "PEFT",
+    "RAGEN",
+    "SkyRL",
+    "torchtune",
+    "TRL",
+    "Unsloth",
+    "verl"
+  ],
+  "verified_additions": [
+    "Agent Skills",
+    "Agent Substrate",
+    "AX",
+    "CANN",
+    "Coze Studio",
+    "CXL 4.0",
+    "CycloneDX 1.7",
+    "Dapr Agents",
+    "DataFlex",
+    "DataFlow",
+    "DeerFlow",
+    "DHttp",
+    "Dify",
+    "Dora",
+    "EAT",
+    "FlagOS",
+    "GGUF",
+    "GNAP",
+    "Google ADK",
+    "Hugging Face Hub",
+    "JIT-Agent",
+    "Kubernetes",
+    "Kueue",
+    "Laguna XS.2",
+    "LangGraph",
+    "Microsoft Agent Framework",
+    "MindIE-LLM",
+    "MindSpore",
+    "MiniCPM",
+    "Muse",
+    "Nemotron",
+    "NVIDIA GPU Operator",
+    "Obelisk",
+    "Octop",
+    "Octos",
+    "OpenAPI 3.2.1",
+    "OpenBao",
+    "openPangu",
+    "openvela",
+    "PenguinHarness",
+    "PhyAgentOS",
+    "PyTorch",
+    "RATS Architecture",
+    "rdma-core",
+    "Robrix",
+    "ROCm",
+    "SCITT Architecture",
+    "Slurm",
+    "SPDX 3.0.1",
+    "TileLang",
+    "TransferQueue",
+    "Triton",
+    "TuyaOpen",
+    "UALink 128G DL/PL 1.0",
+    "UALink 200G 1.0",
+    "UALink 200G DL/PL 2.0",
+    "UALink Chiplet 1.01",
+    "UALink Manageability 1.0",
+    "UnifiedBus 2.0",
+    "Volcano"
+  ],
+  "gosim_scheduled_projects": [
+    "AHE",
+    "DataFlex",
+    "DataFlow",
+    "DeerFlow",
+    "DHttp",
+    "Dora",
+    "FlexKV",
+    "Google ADK",
+    "JIT-Agent",
+    "KTransformers",
+    "llm-d",
+    "LMCache",
+    "Makepad",
+    "MemOS",
+    "MiniCPM",
+    "Mooncake",
+    "Obelisk",
+    "Octos",
+    "openEuler",
+    "openJiuwen",
+    "openvela",
+    "PenguinHarness",
+    "PhyAgentOS",
+    "SGLang",
+    "TransferQueue",
+    "TuyaOpen",
+    "UCM",
+    "vLLM"
+  ],
+  "user_replacements": {
+    "A2App": "Makepad"
+  },
+  "name_order": "Alphabetical within each category except user-specified format order GGUF, Safetensor, ONNX",
+  "sources": [
+    "ai_native_org_oss_landscape.svg",
+    "ai_native_org_oss_landscape_zh.svg",
+    "ai_native_org_oss_landscape_en.svg",
+    "AI_native_org_oss_landscape.md",
+    "AI_native_stack_standards_map_EN.md",
+    "landscape-acn-20260909/source/P20-landscape-acn.svg",
+    "concepts/agentic-oss-hall-of-fame-web/gala-image2-final.html",
+    "https://shenzhen2026.gosim.org/schedule/"
+  ],
+  "entries": [
+    {
+      "name": "802.1Qaz ETS",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://www.ieee802.org/1/pages/802.1az.html"
+      ]
+    },
+    {
+      "name": "802.1Qbb PFC",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://www.ieee802.org/1/pages/802.1bb.html"
+      ]
+    },
+    {
+      "name": "A2A 1.0",
+      "kind": "standard",
+      "aliases": [
+        "A2A"
+      ],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://github.com/a2aproject/A2A"
+      ]
+    },
+    {
+      "name": "A2UI",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/a2ui-project/a2ui"
+      ]
+    },
+    {
+      "name": "AG-UI",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/ag-ui-protocol/ag-ui"
+      ]
+    },
+    {
+      "name": "Agent Internet Architecture",
+      "kind": "draft",
+      "aliases": [
+        "Architectural Requirements for Supporting AI Agents on the Internet"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/doc/draft-daniel-ai-agent-internet-architecture/"
+      ]
+    },
+    {
+      "name": "Agent Lightning",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/microsoft/agent-lightning"
+      ]
+    },
+    {
+      "name": "Agent Skills",
+      "kind": "standard",
+      "aliases": [
+        "Skills"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Intent Contract",
+      "domain_zh": "意图契约",
+      "subsection": "Intent Contract",
+      "urls": [
+        "https://github.com/agentskills/agentskills"
+      ],
+      "scope_note": "Published community specification for reusable agent skills; not an ISO, IETF, or W3C standard."
+    },
+    {
+      "name": "Agent Substrate",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/agent-substrate/substrate"
+      ],
+      "scope_note": "Sandboxed, stateful agent execution runtime; separate project required by AX."
+    },
+    {
+      "name": "Agent TARS",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/bytedance/UI-TARS-desktop"
+      ],
+      "scope_note": "General multimodal agent stack with CLI and web UI; shares a repository with UI-TARS Desktop but is a distinct deliverable. Classified with agent builders and interfaces."
+    },
+    {
+      "name": "AgentConnect",
+      "kind": "project",
+      "aliases": [
+        "ANP / AgentConnect"
+      ],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://github.com/agent-network-protocol/AgentConnect"
+      ]
+    },
+    {
+      "name": "AGENTS.md",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Intent Contract",
+      "domain_zh": "意图契约",
+      "subsection": "Intent Contract",
+      "urls": [
+        "https://github.com/agentsmd/agents.md"
+      ],
+      "scope_note": "Published community format for agent instruction files; not an ISO, IETF, or W3C standard."
+    },
+    {
+      "name": "AHE",
+      "kind": "project",
+      "aliases": [
+        "Agentic Harness Engineering"
+      ],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/china-qijizhifeng/agentic-harness-engineering"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "AIBrix",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "scope_note": "Broader inference orchestration platform with a KV-cache offloading component.",
+      "urls": [
+        "https://github.com/vllm-project/aibrix"
+      ]
+    },
+    {
+      "name": "AID",
+      "kind": "draft",
+      "aliases": [
+        "Agent Identity Discovery"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/doc/draft-nemethi-aid-agent-identity-discovery/"
+      ]
+    },
+    {
+      "name": "AIPF",
+      "kind": "draft",
+      "aliases": [
+        "AI Agent Interoperable Protocol Framework"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/doc/draft-zahed-agent-comm-framework/"
+      ]
+    },
+    {
+      "name": "ANP",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "scope_note": "Published Agent Network Protocol documents; individual profiles have their own status and maturity.",
+      "urls": [
+        "https://github.com/agent-network-protocol/AgentNetworkProtocol"
+      ]
+    },
+    {
+      "name": "ART",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/OpenPipe/ART"
+      ]
+    },
+    {
+      "name": "AtomCode",
+      "kind": "project",
+      "aliases": [
+        "atomcode"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/atomgit-atomcode/atomcode"
+      ]
+    },
+    {
+      "name": "AutoGen",
+      "kind": "project",
+      "aliases": [],
+      "source": "concepts/agentic-oss-hall-of-fame-web/gala-image2-final.html (real project names in demo)",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/microsoft/autogen"
+      ]
+    },
+    {
+      "name": "AX",
+      "kind": "project",
+      "aliases": [
+        "Ax"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "DURABLE & DATAFLOW EXECUTION",
+      "urls": [
+        "https://github.com/google/ax"
+      ],
+      "scope_note": "Pre-1.0, declarative agent workload orchestrator for clusters; relies on Agent Substrate for sandboxed execution."
+    },
+    {
+      "name": "Axolotl",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/axolotl-ai-cloud/axolotl"
+      ]
+    },
+    {
+      "name": "BGP",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc4271/"
+      ]
+    },
+    {
+      "name": "browser-use",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "ACTIONS & EVALUATION",
+      "scope_note": "Browser agent and automation library; its Browser Actor uses the Chrome DevTools Protocol directly.",
+      "urls": [
+        "https://github.com/browser-use/browser-use"
+      ]
+    },
+    {
+      "name": "BrowserGym",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "ACTIONS & EVALUATION",
+      "scope_note": "Web-agent research and evaluation environment; uses Playwright for browser setup.",
+      "urls": [
+        "https://github.com/ServiceNow/BrowserGym"
+      ]
+    },
+    {
+      "name": "bubblewrap",
+      "kind": "project",
+      "aliases": [
+        "bwrap"
+      ],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/containers/bubblewrap"
+      ]
+    },
+    {
+      "name": "CANN",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "AI COMPUTE & KERNEL PROGRAMMING",
+      "urls": [
+        "https://gitcode.com/cann"
+      ],
+      "scope_note": "Public CANN community components; the name does not assert that every CANN component is open source."
+    },
+    {
+      "name": "CATALIST",
+      "kind": "draft",
+      "aliases": [
+        "catalist"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/group/catalist/documents/"
+      ]
+    },
+    {
+      "name": "Cedar",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/cedar-policy/cedar"
+      ]
+    },
+    {
+      "name": "CloudEvents 1.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://github.com/cloudevents/spec/tree/ce@stable/cloudevents"
+      ],
+      "scope_note": "CloudEvents on-the-wire specversion is 1.0; the published specification has a 1.0.2 patch release."
+    },
+    {
+      "name": "Codex SDK",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/openai/codex/tree/main/sdk/typescript"
+      ]
+    },
+    {
+      "name": "Cognee",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "urls": [
+        "https://github.com/topoteretes/cognee"
+      ]
+    },
+    {
+      "name": "containerd",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "scope_note": "Container lifecycle manager that delegates launching containers to lower-level runtimes.",
+      "urls": [
+        "https://github.com/containerd/containerd"
+      ]
+    },
+    {
+      "name": "Coze Studio",
+      "kind": "project",
+      "aliases": [
+        "Coze"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/coze-dev/coze-studio"
+      ]
+    },
+    {
+      "name": "CrewAI",
+      "kind": "project",
+      "aliases": [
+        "crewAI"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/crewAIInc/crewAI"
+      ]
+    },
+    {
+      "name": "CXL 4.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://computeexpresslink.org/cxl-specification/"
+      ],
+      "scope_note": "Published cache-coherent interconnect specification for processors, memory expansion, and accelerators."
+    },
+    {
+      "name": "CycloneDX 1.7",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://cyclonedx.org/specification/overview/"
+      ]
+    },
+    {
+      "name": "Dapr Agents",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/dapr/dapr-agents"
+      ],
+      "scope_note": "Separate Python framework for building durable AI agents on the general-purpose Dapr runtime."
+    },
+    {
+      "name": "DataFlex",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/OpenDCAI/DataFlex"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "DataFlow",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/OpenDCAI/DataFlow"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "DeepEval",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/confident-ai/deepeval"
+      ]
+    },
+    {
+      "name": "DeepSeek",
+      "kind": "model",
+      "aliases": [
+        "deepseek-ai"
+      ],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://github.com/deepseek-ai"
+      ]
+    },
+    {
+      "name": "DeepSeek Harness",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/deepseek-ai/deepseek-harness"
+      ]
+    },
+    {
+      "name": "DeepSpeed",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/deepspeedai/DeepSpeed"
+      ]
+    },
+    {
+      "name": "DeerFlow",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/bytedance/deer-flow"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "DHttp",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://github.com/genmeta/dhttp"
+      ],
+      "scope_note": "General-purpose decentralized HTTP transport included as agent connectivity infrastructure, not an agent-only protocol.",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "Dify",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/langgenius/dify"
+      ],
+      "scope_note": "Public source; current license is modified Apache 2.0 with additional conditions."
+    },
+    {
+      "name": "DMTF MCTP",
+      "kind": "standard",
+      "aliases": [
+        "MCTP"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://www.dmtf.org/standards/pmci"
+      ]
+    },
+    {
+      "name": "DMTF PLDM",
+      "kind": "standard",
+      "aliases": [
+        "PLDM"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://www.dmtf.org/standards/pmci"
+      ]
+    },
+    {
+      "name": "DMTF SPDM 1.4.1",
+      "kind": "standard",
+      "aliases": [
+        "SPDM 1.4",
+        "SPDM 1.4.1"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://www.dmtf.org/standards/spdm"
+      ]
+    },
+    {
+      "name": "DNS",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc1035/"
+      ]
+    },
+    {
+      "name": "DNS-SD",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc6763/"
+      ]
+    },
+    {
+      "name": "DNSSEC",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc4033/"
+      ]
+    },
+    {
+      "name": "Dora",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "DURABLE & DATAFLOW EXECUTION",
+      "urls": [
+        "https://github.com/dora-rs/dora"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "draft-wang-lisp-ai-agent",
+      "kind": "draft",
+      "aliases": [
+        "LISP for Agent Communication",
+        "LISP",
+        "Using LISP as a Network Substrate for AI Agent Communication"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/doc/draft-wang-lisp-ai-agent/"
+      ]
+    },
+    {
+      "name": "DSPy",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/stanfordnlp/dspy"
+      ]
+    },
+    {
+      "name": "Dynamo",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "urls": [
+        "https://github.com/ai-dynamo/dynamo"
+      ]
+    },
+    {
+      "name": "E2B",
+      "kind": "project",
+      "aliases": [],
+      "source": "concepts/agentic-oss-hall-of-fame-web/gala-image2-final.html (real project names in demo)",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/e2b-dev/E2B"
+      ]
+    },
+    {
+      "name": "EAT",
+      "kind": "standard",
+      "aliases": [
+        "Entity Attestation Token"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9711/"
+      ]
+    },
+    {
+      "name": "ECN",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc3168/"
+      ]
+    },
+    {
+      "name": "EVPN / VXLAN",
+      "kind": "standard",
+      "aliases": [
+        "EVPN/VXLAN"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc8365/"
+      ],
+      "scope_note": "Combined deployment pattern supported by separate EVPN and VXLAN RFCs, not the name of one standalone RFC."
+    },
+    {
+      "name": "Firecracker",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/firecracker-microvm/firecracker"
+      ]
+    },
+    {
+      "name": "FlagOS",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "AI COMPUTE & KERNEL PROGRAMMING",
+      "urls": [
+        "https://github.com/flagos-ai"
+      ],
+      "scope_note": "Umbrella AI system software stack; components are maintained in separate public repositories."
+    },
+    {
+      "name": "FlexKV",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "scope_note": "Inference KV-cache manager; not persistent agent memory.",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/taco-project/FlexKV"
+      ]
+    },
+    {
+      "name": "Gemma",
+      "kind": "model",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/google/gemma-3-27b-it"
+      ]
+    },
+    {
+      "name": "GGUF",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "FORMATS",
+      "urls": [
+        "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md"
+      ],
+      "scope_note": "Documented model file format used by GGML-based inference engines; not a separate software project."
+    },
+    {
+      "name": "GLM",
+      "kind": "model",
+      "aliases": [
+        "GLM / Z.ai",
+        "GLM/Z.ai",
+        "Z.ai",
+        "zai-org"
+      ],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/zai-org/models",
+        "https://github.com/zai-org"
+      ],
+      "scope_note": "Open model family published by Z.ai; Z.ai is the publisher, not part of the model-family name."
+    },
+    {
+      "name": "GNAP",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9635/"
+      ]
+    },
+    {
+      "name": "gNMI 0.10",
+      "kind": "standard",
+      "aliases": [
+        "gNMI"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://github.com/openconfig/reference/blob/master/rpc/gnmi/gnmi-specification.md"
+      ]
+    },
+    {
+      "name": "Google ADK",
+      "kind": "project",
+      "aliases": [
+        "Agent Development Kit"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/google/adk-python"
+      ],
+      "scope_note": "Code-first framework for building, evaluating, and deploying agents; it is broader than a standalone harness.",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "goose",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/block/goose"
+      ]
+    },
+    {
+      "name": "Graphiti",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "urls": [
+        "https://github.com/getzep/graphiti"
+      ]
+    },
+    {
+      "name": "gVisor",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/google/gvisor"
+      ]
+    },
+    {
+      "name": "Hermes Agent",
+      "kind": "project",
+      "aliases": [
+        "Hermes"
+      ],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/NousResearch/hermes-agent"
+      ]
+    },
+    {
+      "name": "HTTP/2",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9113/"
+      ]
+    },
+    {
+      "name": "HTTP/3",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9114/"
+      ]
+    },
+    {
+      "name": "Hugging Face Hub",
+      "kind": "project",
+      "aliases": [
+        "huggingface_hub"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "DISTRIBUTION",
+      "urls": [
+        "https://github.com/huggingface/huggingface_hub"
+      ],
+      "scope_note": "Reader-facing label for the open-source huggingface_hub CLI and Python client, not a claim that the hosted Hub service is open source."
+    },
+    {
+      "name": "IEEE 802.3",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://www.ieee802.org/3/"
+      ]
+    },
+    {
+      "name": "IEEE ComSoc ACN TWG",
+      "kind": "draft",
+      "aliases": [],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://www.comsoc.org/engagement-community/boards-councils-committees/committee/agentic-communication-networks-technical-working-group"
+      ]
+    },
+    {
+      "name": "in-toto",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/in-toto/in-toto"
+      ]
+    },
+    {
+      "name": "InfiniBand 2.1",
+      "kind": "standard",
+      "aliases": [
+        "InfiniBand 2.0"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://infinibandta.org/ibta-specification/"
+      ]
+    },
+    {
+      "name": "IPv6",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc8200/"
+      ]
+    },
+    {
+      "name": "ISO/IEC 25706:2026",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://www.iso.org/standard/91251.html"
+      ]
+    },
+    {
+      "name": "JIT-Agent",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/bingreeky/JIT"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "JiuwenMemory",
+      "kind": "project",
+      "aliases": [
+        "openJiuwen Memory"
+      ],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "urls": [
+        "https://github.com/openJiuwen-ai/agent-memory"
+      ],
+      "scope_note": "Official project name for the separately released openJiuwen agent-memory repository."
+    },
+    {
+      "name": "JSON Schema 2020-12",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Intent Contract",
+      "domain_zh": "意图契约",
+      "subsection": "Intent Contract",
+      "urls": [
+        "https://json-schema.org/draft/2020-12"
+      ]
+    },
+    {
+      "name": "JWT / JWS",
+      "kind": "standard",
+      "aliases": [
+        "JWT/JWS"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc7519/",
+        "https://datatracker.ietf.org/doc/rfc7515/"
+      ],
+      "scope_note": "Two related IETF specifications, RFC 7519 and RFC 7515; catalog source points to JWT and the second RFC is linked below."
+    },
+    {
+      "name": "Kata Containers",
+      "kind": "project",
+      "aliases": [
+        "Kata"
+      ],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/kata-containers/kata-containers"
+      ]
+    },
+    {
+      "name": "Keycloak",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/keycloak/keycloak"
+      ]
+    },
+    {
+      "name": "Kimi",
+      "kind": "model",
+      "aliases": [
+        "MoonshotAI / Kimi"
+      ],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://github.com/moonshotai"
+      ]
+    },
+    {
+      "name": "KTransformers",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/kvcache-ai/ktransformers"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "kind": "project",
+      "aliases": [
+        "k8s"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "GPU CLUSTER ORCHESTRATION",
+      "urls": [
+        "https://github.com/kubernetes/kubernetes"
+      ]
+    },
+    {
+      "name": "Kueue",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "GPU CLUSTER ORCHESTRATION",
+      "urls": [
+        "https://github.com/kubernetes-sigs/kueue"
+      ]
+    },
+    {
+      "name": "Laguna XS.2",
+      "kind": "model",
+      "aliases": [
+        "Poolside Laguna"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/poolside/Laguna-XS.2"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "kind": "project",
+      "aliases": [
+        "langchain"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/langchain-ai/langchain"
+      ],
+      "scope_note": "Agent framework with a configurable create_agent loop; its create_agent API is described by LangChain as a minimal harness."
+    },
+    {
+      "name": "Langfuse",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/langfuse/langfuse"
+      ]
+    },
+    {
+      "name": "LangGraph",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "DURABLE & DATAFLOW EXECUTION",
+      "urls": [
+        "https://github.com/langchain-ai/langgraph"
+      ],
+      "scope_note": "Low-level agent orchestration runtime for stateful workflows and durable execution."
+    },
+    {
+      "name": "Letta",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "urls": [
+        "https://github.com/letta-ai/letta"
+      ]
+    },
+    {
+      "name": "LibreChat",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "scope_note": "Self-hosted AI application and interface with a no-code Agent Builder; not a general-purpose agent harness.",
+      "urls": [
+        "https://github.com/danny-avila/LibreChat"
+      ]
+    },
+    {
+      "name": "Linux",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "OPERATING SYSTEMS & ENDPOINTS",
+      "urls": [
+        "https://github.com/torvalds/linux"
+      ]
+    },
+    {
+      "name": "Llama",
+      "kind": "model",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/meta-llama"
+      ]
+    },
+    {
+      "name": "LLaMA-Factory",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/hiyouga/LlamaFactory"
+      ]
+    },
+    {
+      "name": "llama.cpp",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "urls": [
+        "https://github.com/ggml-org/llama.cpp"
+      ]
+    },
+    {
+      "name": "llm-d",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/llm-d/llm-d"
+      ]
+    },
+    {
+      "name": "LMCache",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "scope_note": "Inference KV-cache storage and reuse; not persistent agent memory.",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/LMCache/LMCache"
+      ]
+    },
+    {
+      "name": "Makepad",
+      "kind": "project",
+      "aliases": [],
+      "source": "User-requested project replacement",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/makepad/makepad"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "Mastra",
+      "kind": "project",
+      "aliases": [
+        "mastra"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/mastra-ai/mastra"
+      ]
+    },
+    {
+      "name": "Matrix",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://spec.matrix.org/latest/",
+        "https://github.com/matrix-org/matrix-spec"
+      ],
+      "scope_note": "General-purpose federated communication standard; shown here as connectivity infrastructure, not as an agent-specific protocol."
+    },
+    {
+      "name": "MCP 2026-07-28",
+      "kind": "standard",
+      "aliases": [
+        "MCP"
+      ],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://modelcontextprotocol.io/specification/2026-07-28",
+        "https://github.com/modelcontextprotocol"
+      ]
+    },
+    {
+      "name": "Megatron-LM",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/NVIDIA/Megatron-LM"
+      ]
+    },
+    {
+      "name": "Mem0",
+      "kind": "project",
+      "aliases": [
+        "mem0"
+      ],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "urls": [
+        "https://github.com/mem0ai/mem0"
+      ]
+    },
+    {
+      "name": "MemoryOS",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "urls": [
+        "https://github.com/BAI-LAB/MemoryOS"
+      ]
+    },
+    {
+      "name": "MemOS",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "MEMORY & CONTEXT",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/MemTensor/MemOS"
+      ]
+    },
+    {
+      "name": "Microsoft Agent Framework",
+      "kind": "project",
+      "aliases": [
+        "MAF"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/microsoft/agent-framework"
+      ],
+      "scope_note": "Agent framework with workflow orchestration and harness capabilities; distinct from its predecessor AutoGen."
+    },
+    {
+      "name": "MindIE-LLM",
+      "kind": "project",
+      "aliases": [
+        "MindIE"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "urls": [
+        "https://github.com/Ascend/MindIE-LLM"
+      ]
+    },
+    {
+      "name": "MindSpore",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/mindspore-ai/mindspore"
+      ]
+    },
+    {
+      "name": "MiniCPM",
+      "kind": "model",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://github.com/OpenBMB/MiniCPM"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "MiniMax",
+      "kind": "model",
+      "aliases": [
+        "MiniMax-AI"
+      ],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://github.com/MiniMax-AI"
+      ]
+    },
+    {
+      "name": "Mistral",
+      "kind": "model",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/mistralai"
+      ]
+    },
+    {
+      "name": "MLC-LLM",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "urls": [
+        "https://github.com/mlc-ai/mlc-llm"
+      ]
+    },
+    {
+      "name": "Moby",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "scope_note": "Open-source container engine components; broader than a sandbox or low-level runtime.",
+      "urls": [
+        "https://github.com/moby/moby"
+      ]
+    },
+    {
+      "name": "ModelScope",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "DISTRIBUTION",
+      "urls": [
+        "https://github.com/modelscope/modelscope"
+      ],
+      "scope_note": "Open-source ModelScope library with model hub access; not a claim that the hosted platform is open source."
+    },
+    {
+      "name": "Mooncake",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/kvcache-ai/Mooncake"
+      ]
+    },
+    {
+      "name": "Mooncake TE",
+      "kind": "project",
+      "aliases": [
+        "Mooncake Transfer Engine"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "scope_note": "Transfer Engine component of the Mooncake repository; distinct from Mooncake Store and its KV cache use.",
+      "urls": [
+        "https://github.com/kvcache-ai/Mooncake"
+      ]
+    },
+    {
+      "name": "Muse",
+      "kind": "model",
+      "aliases": [
+        "Meta Muse",
+        "Muse Glimmer"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/meta-models/Muse-Glimmer-30B"
+      ]
+    },
+    {
+      "name": "NATS",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "scope_note": "General-purpose messaging infrastructure used by agents; not an agent-specific protocol.",
+      "urls": [
+        "https://github.com/nats-io/nats-server"
+      ]
+    },
+    {
+      "name": "Nemotron",
+      "kind": "model",
+      "aliases": [
+        "NVIDIA Nemotron"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://github.com/NVIDIA-NeMo/Nemotron"
+      ]
+    },
+    {
+      "name": "Network Trust",
+      "kind": "draft",
+      "aliases": [
+        "Network Trust Framework for AI Agents"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://www.ietf.org/archive/id/draft-yu-network-trust-framework-for-ai-agents-00.html"
+      ]
+    },
+    {
+      "name": "NIXL",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "urls": [
+        "https://github.com/ai-dynamo/nixl"
+      ]
+    },
+    {
+      "name": "NVIDIA GPU Operator",
+      "kind": "project",
+      "aliases": [
+        "GPU Operator"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "GPU CLUSTER ORCHESTRATION",
+      "urls": [
+        "https://github.com/NVIDIA/gpu-operator"
+      ],
+      "scope_note": "The operator source is open; deployed NVIDIA drivers and CUDA components may have separate licenses."
+    },
+    {
+      "name": "NVMe Base 2.4",
+      "kind": "standard",
+      "aliases": [
+        "NVMe 2.4"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "STORAGE",
+      "urls": [
+        "https://nvmexpress.org/specification/nvm-express-base-specification/"
+      ]
+    },
+    {
+      "name": "NVMe-MI 2.2",
+      "kind": "standard",
+      "aliases": [
+        "NVMe-MI"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://nvmexpress.org/specification/nvme-mi-specification/"
+      ],
+      "scope_note": "The current NVM Express Management Interface specification is revision 2.2."
+    },
+    {
+      "name": "NVMe/RDMA 1.3",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "STORAGE",
+      "urls": [
+        "https://nvmexpress.org/specification/rdma-transport-specification/"
+      ]
+    },
+    {
+      "name": "NVMe/TCP 1.3",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "STORAGE",
+      "urls": [
+        "https://nvmexpress.org/specification/tcp-transport-specification/"
+      ]
+    },
+    {
+      "name": "OAuth 2.0",
+      "kind": "standard",
+      "aliases": [
+        "OAuth"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc6749/"
+      ]
+    },
+    {
+      "name": "Obelisk",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/tommy0103/obelisk"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "OCI Distribution 1.1",
+      "kind": "standard",
+      "aliases": [
+        "Distribution 1.1"
+      ],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "EXECUTION SPECS",
+      "urls": [
+        "https://github.com/opencontainers/distribution-spec/releases"
+      ]
+    },
+    {
+      "name": "OCI Image 1.1",
+      "kind": "standard",
+      "aliases": [
+        "Image 1.1"
+      ],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "EXECUTION SPECS",
+      "urls": [
+        "https://github.com/opencontainers/image-spec/releases"
+      ]
+    },
+    {
+      "name": "OCI Runtime 1.3",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "EXECUTION SPECS",
+      "urls": [
+        "https://github.com/opencontainers/runtime-spec/releases"
+      ]
+    },
+    {
+      "name": "OCP ESUN 1.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://www.opencompute.org/index.php/blog/the-ocp-esun-10-specification-has-been-released"
+      ]
+    },
+    {
+      "name": "OCP SAI",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://github.com/opencomputeproject/SAI"
+      ]
+    },
+    {
+      "name": "Octop",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/TencentCloud/Octop"
+      ]
+    },
+    {
+      "name": "Octos",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/octos-org/octos"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "OIDC",
+      "kind": "standard",
+      "aliases": [
+        "OpenID Connect"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://openid.net/specs/openid-connect-core-1_0.html"
+      ]
+    },
+    {
+      "name": "OLMo",
+      "kind": "model",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/allenai"
+      ]
+    },
+    {
+      "name": "Omarchy",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "OPERATING SYSTEMS & ENDPOINTS",
+      "urls": [
+        "https://github.com/basecamp/omarchy"
+      ]
+    },
+    {
+      "name": "ONNX",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "FORMATS",
+      "urls": [
+        "https://github.com/onnx/onnx"
+      ]
+    },
+    {
+      "name": "OPA / Rego",
+      "kind": "project",
+      "aliases": [
+        "OPA",
+        "Open Policy Agent",
+        "OPA/Rego"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/open-policy-agent/opa"
+      ]
+    },
+    {
+      "name": "Open WebUI",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "scope_note": "Public source; releases after v0.6.5 have additional branding conditions.",
+      "urls": [
+        "https://github.com/open-webui/open-webui"
+      ]
+    },
+    {
+      "name": "OpenAgents",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://github.com/openagents-org/openagents"
+      ]
+    },
+    {
+      "name": "OpenAPI 3.2.1",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Intent Contract",
+      "domain_zh": "意图契约",
+      "subsection": "Intent Contract",
+      "urls": [
+        "https://spec.openapis.org/oas/v3.2.1.html"
+      ]
+    },
+    {
+      "name": "OpenBao",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/openbao/openbao"
+      ]
+    },
+    {
+      "name": "OpenClaw",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/openclaw/openclaw"
+      ]
+    },
+    {
+      "name": "OpenConfig",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://www.openconfig.net/"
+      ]
+    },
+    {
+      "name": "openEuler",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "OPERATING SYSTEMS & ENDPOINTS",
+      "urls": [
+        "https://gitee.com/openeuler"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "OpenFab",
+      "kind": "project",
+      "aliases": [],
+      "source": "October 5, 2026 addition; official project repository",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/Open-fab-ai/openfab"
+      ],
+      "scope_note": "In-toto predicate for AI code-generation provenance: per-range human/AI attribution, prompt hash binding, a signed embedded acceptance contract, and cryptographic human sign-offs. Registration as a vetted in-toto predicate type is proposed and under maintainer review (in-toto/attestation#604); shown here as a project pending that outcome."
+    },
+    {
+      "name": "OpenFGA",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/openfga/openfga"
+      ]
+    },
+    {
+      "name": "OpenHands",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/All-Hands-AI/OpenHands"
+      ]
+    },
+    {
+      "name": "OpenHarmony",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "OPERATING SYSTEMS & ENDPOINTS",
+      "urls": [
+        "https://gitcode.com/openharmony"
+      ]
+    },
+    {
+      "name": "openJiuwen",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/openJiuwen-ai/agent-core",
+        "https://github.com/openJiuwen-ai"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "openPangu",
+      "kind": "model",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://huggingface.co/openpangu/models"
+      ]
+    },
+    {
+      "name": "OpenTelemetry",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://opentelemetry.io/docs/specs/otel/",
+        "https://github.com/open-telemetry"
+      ]
+    },
+    {
+      "name": "openvela",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "OPERATING SYSTEMS & ENDPOINTS",
+      "urls": [
+        "https://github.com/open-vela"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "P802.3dj",
+      "kind": "draft",
+      "aliases": [],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://www.ieee802.org/3/dj/public/index.html"
+      ]
+    },
+    {
+      "name": "PCIe 7.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://pcisig.com/PCIExpress/Spec/Base/_7.0"
+      ]
+    },
+    {
+      "name": "PEFT",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/huggingface/peft"
+      ]
+    },
+    {
+      "name": "PenguinHarness",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/Prism-Shadow/penguin-harness"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "Phoenix",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/Arize-ai/phoenix"
+      ]
+    },
+    {
+      "name": "PhyAgentOS",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/PhyAgentOS/PhyAgentOS-core"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "pi-mono",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/badlogic/pi-mono"
+      ]
+    },
+    {
+      "name": "Playwright",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "ACTIONS & EVALUATION",
+      "scope_note": "Browser automation and end-to-end testing framework; distinct from the Playwright MCP server.",
+      "urls": [
+        "https://github.com/microsoft/playwright"
+      ]
+    },
+    {
+      "name": "Playwright MCP",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "ACTIONS & EVALUATION",
+      "urls": [
+        "https://github.com/microsoft/playwright-mcp"
+      ],
+      "scope_note": "MCP server exposing Playwright browser automation to agents; a separate project built on Playwright."
+    },
+    {
+      "name": "POSIX",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "EXECUTION SPECS",
+      "urls": [
+        "https://pubs.opengroup.org/onlinepubs/9799919799/"
+      ]
+    },
+    {
+      "name": "promptfoo",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/promptfoo/promptfoo"
+      ]
+    },
+    {
+      "name": "Pydantic AI",
+      "kind": "project",
+      "aliases": [
+        "pydantic-ai"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/pydantic/pydantic-ai"
+      ]
+    },
+    {
+      "name": "Pyodide",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "scope_note": "WebAssembly-based Python distribution for browsers and Node.js; not a security sandbox by itself.",
+      "urls": [
+        "https://github.com/pyodide/pyodide"
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "AI COMPUTE & KERNEL PROGRAMMING",
+      "urls": [
+        "https://github.com/pytorch/pytorch"
+      ]
+    },
+    {
+      "name": "QUIC",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9000/"
+      ]
+    },
+    {
+      "name": "Qwen",
+      "kind": "model",
+      "aliases": [
+        "QwenLM"
+      ],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "MODEL FAMILIES",
+      "urls": [
+        "https://github.com/QwenLM"
+      ]
+    },
+    {
+      "name": "Ragas",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/explodinggradients/ragas"
+      ]
+    },
+    {
+      "name": "RAGEN",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/mll-lab-nu/RAGEN"
+      ]
+    },
+    {
+      "name": "RATS Architecture",
+      "kind": "standard",
+      "aliases": [
+        "RATS"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9334/"
+      ]
+    },
+    {
+      "name": "rdma-core",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "STORAGE",
+      "urls": [
+        "https://github.com/linux-rdma/rdma-core"
+      ]
+    },
+    {
+      "name": "Redfish 1.25.0",
+      "kind": "standard",
+      "aliases": [
+        "Redfish 1.23.1"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://www.dmtf.org/standards/redfish"
+      ]
+    },
+    {
+      "name": "Rig",
+      "kind": "project",
+      "aliases": [
+        "rig"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/0xPlaygrounds/rig"
+      ]
+    },
+    {
+      "name": "Robrix",
+      "kind": "project",
+      "aliases": [
+        "robrix"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "urls": [
+        "https://github.com/project-robius/robrix"
+      ],
+      "scope_note": "Open-source Matrix chat client built with Makepad; a connectivity application, not an agent-specific protocol."
+    },
+    {
+      "name": "RoCEv2",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://infinibandta.org/ibta-specification/"
+      ]
+    },
+    {
+      "name": "ROCm",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "AI COMPUTE & KERNEL PROGRAMMING",
+      "urls": [
+        "https://github.com/ROCm"
+      ],
+      "scope_note": "AMD open software stack; licenses vary by component."
+    },
+    {
+      "name": "Routing",
+      "kind": "draft",
+      "aliases": [
+        "Routing Considerations in Agentic Network"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/doc/draft-du-catalist-routing-considerations/"
+      ]
+    },
+    {
+      "name": "Safetensor",
+      "kind": "project",
+      "aliases": [
+        "safetensors"
+      ],
+      "source": "catalog",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "FORMATS",
+      "urls": [
+        "https://github.com/huggingface/safetensors"
+      ],
+      "scope_note": "Display label for the safetensors tensor serialization format and its open-source library; the official repository and package name is lowercase plural “safetensors”."
+    },
+    {
+      "name": "SCIM 2.0",
+      "kind": "standard",
+      "aliases": [
+        "SCIM"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc7644/"
+      ]
+    },
+    {
+      "name": "SCITT Architecture",
+      "kind": "standard",
+      "aliases": [
+        "SCITT"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9943/"
+      ]
+    },
+    {
+      "name": "SGLang",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/sgl-project/sglang"
+      ]
+    },
+    {
+      "name": "Sigstore",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://github.com/sigstore/sigstore"
+      ]
+    },
+    {
+      "name": "SkyRL",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT RL & SELF-IMPROVEMENT",
+      "urls": [
+        "https://github.com/NovaSky-AI/SkyRL"
+      ]
+    },
+    {
+      "name": "SLSA",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://slsa.dev/spec/v1.2/"
+      ]
+    },
+    {
+      "name": "Slurm",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "GPU CLUSTER ORCHESTRATION",
+      "urls": [
+        "https://github.com/SchedMD/slurm"
+      ]
+    },
+    {
+      "name": "SPDK",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "urls": [
+        "https://github.com/spdk/spdk"
+      ]
+    },
+    {
+      "name": "SPDX 3.0.1",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://spdx.github.io/spdx-spec/v3.0.1/"
+      ]
+    },
+    {
+      "name": "SPIFFE",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/spiffe/spiffe"
+      ]
+    },
+    {
+      "name": "SPIRE",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/spiffe/spire"
+      ]
+    },
+    {
+      "name": "SRv6",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc8986/"
+      ]
+    },
+    {
+      "name": "SUE 1.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://www.opencompute.org/wiki/Networking/SUE-T"
+      ],
+      "scope_note": "The initial contributed Scale-Up Ethernet specification; successor effort is the SUE-T workstream."
+    },
+    {
+      "name": "SUE-T",
+      "kind": "draft",
+      "aliases": [],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://www.opencompute.org/wiki/Networking/SUE-T"
+      ]
+    },
+    {
+      "name": "SVCB / HTTPS",
+      "kind": "standard",
+      "aliases": [
+        "SVCB",
+        "SVCB/HTTPS"
+      ],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc9460/"
+      ]
+    },
+    {
+      "name": "Temporal",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "DURABLE & DATAFLOW EXECUTION",
+      "urls": [
+        "https://github.com/temporalio/temporal"
+      ]
+    },
+    {
+      "name": "TileLang",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "AI COMPUTE & KERNEL PROGRAMMING",
+      "urls": [
+        "https://github.com/tile-ai/tilelang"
+      ]
+    },
+    {
+      "name": "TLS 1.3",
+      "kind": "standard",
+      "aliases": [
+        "TLS"
+      ],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "INTERNET",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc8446/"
+      ]
+    },
+    {
+      "name": "torchtune",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/meta-pytorch/torchtune"
+      ]
+    },
+    {
+      "name": "TransferQueue",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/Ascend/TransferQueue"
+      ],
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "Triton",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "AI COMPUTE & KERNEL PROGRAMMING",
+      "urls": [
+        "https://github.com/triton-lang/triton"
+      ]
+    },
+    {
+      "name": "TRL",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/huggingface/trl"
+      ]
+    },
+    {
+      "name": "Trust/Auth",
+      "kind": "draft",
+      "aliases": [
+        "Trust / Auth",
+        "A Trust and Authentication Framework for Cross-Domain A2A"
+      ],
+      "source": "Public draft or active workstream; not a released standard",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "DRAFTS & WORKSTREAMS",
+      "urls": [
+        "https://datatracker.ietf.org/doc/draft-kiliram-agent-trust-auth-framework/"
+      ]
+    },
+    {
+      "name": "TuyaOpen",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "AGENT BUILDERS & INTERFACES",
+      "urls": [
+        "https://github.com/tuya/TuyaOpen"
+      ],
+      "scope_note": "AI/IoT device development framework with agent-capable applications; not an operating system.",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/"
+    },
+    {
+      "name": "UALink 128G DL/PL 1.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://ualinkconsortium.org/specification/"
+      ]
+    },
+    {
+      "name": "UALink 200G 1.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://ualinkconsortium.org/specification/"
+      ]
+    },
+    {
+      "name": "UALink 200G DL/PL 2.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://ualinkconsortium.org/specification/"
+      ]
+    },
+    {
+      "name": "UALink Chiplet 1.01",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://ualinkconsortium.org/specification/"
+      ]
+    },
+    {
+      "name": "UALink Common 2.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://ualinkconsortium.org/specification/"
+      ]
+    },
+    {
+      "name": "UALink Manageability 1.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://ualinkconsortium.org/specification/"
+      ]
+    },
+    {
+      "name": "UCIe 3.0",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://www.uciexpress.org/specifications"
+      ]
+    },
+    {
+      "name": "UCM",
+      "kind": "project",
+      "aliases": [
+        "UCM — Unified Cache Manager",
+        "Unified Cache Manager"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "scope_note": "Unified Cache Manager for inference KV cache; not persistent agent memory.",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/ModelEngine-Group/unified-cache-management"
+      ]
+    },
+    {
+      "name": "UCX",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "KV CACHE, STORAGE & DATA MOVEMENT",
+      "urls": [
+        "https://github.com/openucx/ucx"
+      ]
+    },
+    {
+      "name": "UI-TARS Desktop",
+      "kind": "project",
+      "aliases": [
+        "UI-TARS"
+      ],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "ACTIONS & EVALUATION",
+      "scope_note": "Desktop GUI agent application; shares a repository with Agent TARS but is a distinct deliverable.",
+      "urls": [
+        "https://github.com/bytedance/UI-TARS-desktop"
+      ]
+    },
+    {
+      "name": "Ultra Ethernet / UET 1.0.3",
+      "kind": "standard",
+      "aliases": [
+        "Ultra Ethernet 1.0.3",
+        "UET 1.0.3",
+        "UEC"
+      ],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-OUT",
+      "urls": [
+        "https://ultraethernet.org/specification-history/"
+      ]
+    },
+    {
+      "name": "UnifiedBus 2.0",
+      "kind": "standard",
+      "aliases": [
+        "UnifiedBus",
+        "UB 2.0"
+      ],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "SCALE-UP",
+      "urls": [
+        "https://www.unifiedbus.com/en"
+      ]
+    },
+    {
+      "name": "Unsloth",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/unslothai/unsloth"
+      ]
+    },
+    {
+      "name": "Vault",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://github.com/hashicorp/vault"
+      ],
+      "scope_note": "Public source under BUSL 1.1 for current releases; not an unrestricted open-source license."
+    },
+    {
+      "name": "verl",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 learning and training addition; official project repository",
+      "domain": "Open Models",
+      "domain_zh": "开源模型",
+      "subsection": "TRAINING & FINE-TUNING",
+      "urls": [
+        "https://github.com/verl-project/verl"
+      ]
+    },
+    {
+      "name": "vLLM",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "INFERENCE ENGINES & SERVING",
+      "conference_source": "https://shenzhen2026.gosim.org/schedule/",
+      "urls": [
+        "https://github.com/vllm-project/vllm"
+      ]
+    },
+    {
+      "name": "Volcano",
+      "kind": "project",
+      "aliases": [],
+      "source": "September 30, 2026 addition; official publisher source",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "GPU CLUSTER ORCHESTRATION",
+      "urls": [
+        "https://github.com/volcano-sh/volcano"
+      ]
+    },
+    {
+      "name": "W3C DID Core",
+      "kind": "standard",
+      "aliases": [
+        "W3C DID",
+        "DID Core"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://www.w3.org/TR/did-core/"
+      ]
+    },
+    {
+      "name": "W3C PROV",
+      "kind": "standard",
+      "aliases": [
+        "PROV"
+      ],
+      "source": "catalog",
+      "domain": "Trace & Evidence",
+      "domain_zh": "轨迹与证据",
+      "subsection": "Trace & Evidence",
+      "urls": [
+        "https://www.w3.org/TR/prov-overview/"
+      ]
+    },
+    {
+      "name": "W3C VC 2.0",
+      "kind": "standard",
+      "aliases": [
+        "VC 2.0",
+        "VC",
+        "Verifiable Credentials 2.0"
+      ],
+      "source": "catalog",
+      "domain": "Identity & Access",
+      "domain_zh": "身份与访问",
+      "subsection": "Identity & Access",
+      "urls": [
+        "https://www.w3.org/TR/vc-data-model-2.0/"
+      ]
+    },
+    {
+      "name": "WASI",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "EXECUTION SPECS",
+      "urls": [
+        "https://github.com/WebAssembly/WASI"
+      ]
+    },
+    {
+      "name": "Wasmtime",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Execution Environment",
+      "domain_zh": "智能体执行环境",
+      "subsection": "SANDBOXES & RUNTIMES",
+      "urls": [
+        "https://github.com/bytecodealliance/wasmtime"
+      ]
+    },
+    {
+      "name": "YANG",
+      "kind": "standard",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Inference Infrastructure",
+      "domain_zh": "推理基础设施",
+      "subsection": "MANAGEMENT & TRUST",
+      "urls": [
+        "https://datatracker.ietf.org/doc/rfc7950/"
+      ]
+    },
+    {
+      "name": "Zenoh",
+      "kind": "project",
+      "aliases": [],
+      "source": "catalog",
+      "domain": "Agent Connectivity & State",
+      "domain_zh": "智能体互联与状态",
+      "subsection": "AGENT CONNECTIVITY",
+      "scope_note": "General-purpose distributed data and messaging middleware used by agents; not an agent-specific protocol.",
+      "urls": [
+        "https://github.com/eclipse-zenoh/zenoh"
+      ]
+    },
+    {
+      "name": "ZeroClaw",
+      "kind": "project",
+      "aliases": [
+        "zeroclaw"
+      ],
+      "source": "User-requested project addition",
+      "domain": "Agent Harness",
+      "domain_zh": "智能体运行框架",
+      "subsection": "HARNESS & TURN MANAGEMENT",
+      "urls": [
+        "https://github.com/zeroclaw-labs/zeroclaw"
+      ]
+    }
+  ],
+  "october_additions": [
+    "OpenFab"
+  ]
+}

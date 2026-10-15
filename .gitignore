@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.npm-cache/
+.playwright-cli/
+output/
+.DS_Store
+.env
+.env.*
+findings.md

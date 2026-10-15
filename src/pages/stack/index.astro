@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Explorer from '../../components/Explorer.astro';
+import Icon from '../../components/Icon.astro';
+import { domains, domainEntries } from '../../lib/catalog';
+---
+<Layout title="The agent stack" active="stack">
+  <section class="page-intro container"><span class="eyebrow">THE LANDSCAPE / 08 SPACES</span><h1>See the whole <em>stack.</em></h1><div class="intro-bottom"><p>From intent to inference. Explore the layers that make agent applications possible.</p><a class="inline-link" href="#catalog">Browse every entry <Icon name="arrow" size={18} /></a></div></section>
+  <section class="stack-map container" aria-label="Interactive agent stack">
+    <div class="stack-map-top">{domains.slice(0, 3).map(d => <a class="stack-map-cell" href={`?domain=${d.id}#catalog`} data-stack-domain={d.id} data-domain={d.id}><span class="eyebrow">{d.number} / {domainEntries(d.id).length} ENTRIES</span><h2>{d.short}</h2><p>{d.description}</p><span class="stack-preview">{domainEntries(d.id).slice(0, 3).map(e => e.name).join(' · ')}</span><Icon name="diagonal" /></a>)}</div>
+    <div class="stack-map-flow" aria-hidden="true">↓ <span>Instructions, identity and evidence span the stack</span> ↓</div>
+    {domains.slice(3).map(d => <a class="stack-map-band" href={`?domain=${d.id}#catalog`} data-stack-domain={d.id} data-domain={d.id}><span class="eyebrow">{d.number}</span><div><h2>{d.short}</h2><p>{d.description}</p></div><span class="stack-preview">{domainEntries(d.id).filter(e => e.assessment).slice(0, 3).map(e => e.name).join(' · ') || domainEntries(d.id).slice(0, 3).map(e => e.name).join(' · ')}</span><span class="stack-map-count">{domainEntries(d.id).length}<small>entries</small></span><Icon name="diagonal" /></a>)}
+    <p class="map-caption">A taxonomy of related building blocks. Layer placement does not imply verified interoperability.</p>
+  </section>
+  <Explorer stack />
+</Layout>

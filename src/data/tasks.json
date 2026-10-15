@@ -1,0 +1,79 @@
+[
+  {
+    "id": "models",
+    "number": "01",
+    "title": "Choose a model",
+    "short": "Models & inference",
+    "description": "Find a model family, a local runtime, and the formats that connect them.",
+    "question": "What will power your agent?",
+    "guide": "Model families, weight formats and inference runtimes solve different parts of this task. Compare your tool-calling and structured-output needs against the exact model and backend you plan to use.",
+    "caveat": "A runtime's license does not cover model weights. Hardware support and tool-calling behavior vary by model and backend.",
+    "caveatSource": "llama-cpp"
+  },
+  {
+    "id": "tools",
+    "number": "02",
+    "title": "Connect tools & data",
+    "short": "Tools & connections",
+    "description": "Give an agent useful actions, typed interfaces, and access to the outside world.",
+    "question": "What can your agent actually do?",
+    "guide": "Start with a framework's tool APIs, then consider protocols, connectors and browser automation. An interface format and a working implementation are different kinds of building block.",
+    "caveat": "A connected tool still needs application-level permissions and error handling. Browser automation does not supply a sandbox.",
+    "caveatSource": "playwright"
+  },
+  {
+    "id": "memory",
+    "number": "03",
+    "title": "Give it memory",
+    "short": "Memory & context",
+    "description": "Keep useful context across steps, sessions, and changes in the world.",
+    "question": "What should your agent remember?",
+    "guide": "Distinguish run checkpoints, conversation history, semantic memories and temporal knowledge graphs. These approaches have different storage, retrieval and lifecycle requirements.",
+    "caveat": "Memory retrieval needs workload-specific evaluation. Graph ingestion adds database and model requirements; smaller models can produce invalid structured output.",
+    "caveatSource": "graphiti"
+  },
+  {
+    "id": "safety",
+    "number": "04",
+    "title": "Run code safely",
+    "short": "Isolation & access",
+    "description": "Set execution boundaries, control permissions, and establish identities.",
+    "question": "Where are the boundaries?",
+    "guide": "Sandboxes, workload identity and policy engines cover different boundaries. Match the isolation mechanism to the code and resources your agent can reach.",
+    "caveat": "MicroVMs are an infrastructure primitive. Host configuration, network policy and workload lifecycle remain integration responsibilities.",
+    "caveatSource": "firecracker"
+  },
+  {
+    "id": "workflows",
+    "number": "05",
+    "title": "Keep work running",
+    "short": "Workflows & agents",
+    "description": "Coordinate steps, pause for a human, and recover when execution fails.",
+    "question": "Can a run survive the unexpected?",
+    "guide": "Separate the agent loop from durable execution. Frameworks help decide what happens next; durable runtimes record progress and recover work after interruptions.",
+    "caveat": "Persistence does not make external side effects exactly-once. Durable workflows need correct replay and idempotency design.",
+    "caveatSource": "temporal"
+  },
+  {
+    "id": "evaluate",
+    "number": "06",
+    "title": "Evaluate & observe",
+    "short": "Evals & evidence",
+    "description": "Inspect traces, test behavior, and track whether changes help.",
+    "question": "How will you know it works?",
+    "guide": "Combine offline evaluations with traces from real runs. Observability explains behavior; test cases and assertions measure the outcomes you actually care about.",
+    "caveat": "Passing an evaluation suite establishes results on those cases. It does not demonstrate reliability on every future task.",
+    "caveatSource": "promptfoo"
+  },
+  {
+    "id": "deploy",
+    "number": "07",
+    "title": "Serve & deploy",
+    "short": "Serving & operations",
+    "description": "Serve inference, schedule compute, and operate the supporting stack.",
+    "question": "What does it take to operate?",
+    "guide": "Inference servers, schedulers and interconnect specifications occupy different levels. Start with serving requirements before exploring cluster and hardware infrastructure.",
+    "caveat": "A serving API does not establish throughput for your workload. Validate the selected model, hardware backend and memory requirements.",
+    "caveatSource": "vllm"
+  }
+]

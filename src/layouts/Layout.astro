@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import '../styles/colors.css';
+import Icon from '../components/Icon.astro';
+interface Props { title?: string; description?: string; active?: string }
+const { title, description = 'A developer field guide to the agent stack. Explore available solutions, compare readiness evidence, and understand the gaps.', active = 'explore' } = Astro.props;
+const pageTitle = title ? `${title} — Are We Agent Yet?` : 'Are We Agent Yet? — A developer field guide';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f5f3ec" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="/" aria-label="Are We Agent Yet? Home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Are We Agent Yet<span class="brand-question">?</span></span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/" aria-current={active === 'explore' ? 'page' : undefined}>Explore</a>
+          <a href="/stack/" aria-current={active === 'stack' ? 'page' : undefined}>The stack</a>
+          <a href="/methodology/" aria-current={active === 'methodology' ? 'page' : undefined}>Methodology</a>
+          <a class="nav-compare" href="/compare/" aria-current={active === 'compare' ? 'page' : undefined}><Icon name="compare" size={16} /> Compare <span data-compare-count>0</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer container">
+      <div class="footer-top"><a class="footer-brand" href="/">Are We Agent Yet?</a><p>An independent field guide.<br />Evidence over hype. Always a work in progress.</p><a href="/methodology/#contributing">Help improve the guide <Icon name="diagonal" size={17} /></a></div>
+      <div class="footer-bottom"><span>Developer edition · 2026</span><div><a href="/downloads/project-catalog.json" download>Catalog JSON</a><a href="/downloads/project-catalog.csv" download>CSV</a><a href="/methodology/#sources">Sources & dates</a></div><span>Built for people building agents.</span></div>
+    </footer>
+    <aside id="compare-tray" class="compare-tray" aria-label="Selected comparisons" hidden>
+      <div><span class="eyebrow">YOUR SHORTLIST</span><div id="compare-selection"></div></div>
+      <a id="compare-tray-link" class="button primary" href="/compare/">Compare <span data-compare-count>0</span> <Icon name="arrow" size={17} /></a>
+      <button id="compare-clear" class="icon-button" aria-label="Clear comparison"><Icon name="close" size={18} /></button>
+    </aside>
+    <div id="announcement" class="toast" role="status" aria-live="polite"></div>
+    <script>import '../scripts/comparison.ts';</script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+/* A consistent palette for spaces and tasks, keeping the paper-and-ink base. */
+[data-domain="intent-contract"] {
+  --space-color: #9a4e35;
+  --space-tint: #f3e3d7;
+  --space-border: #d7b29a;
+}
+[data-domain="identity-access"] {
+  --space-color: #795b17;
+  --space-tint: #f1e8ca;
+  --space-border: #d3c085;
+}
+[data-domain="trace-evidence"] {
+  --space-color: #9b4437;
+  --space-tint: #f3e0d9;
+  --space-border: #d5aaa0;
+}
+[data-domain="agent-harness"] {
+  --space-color: #704b70;
+  --space-tint: #eee2ed;
+  --space-border: #c5abc3;
+}
+[data-domain="agent-execution-environment"] {
+  --space-color: #30665f;
+  --space-tint: #deece5;
+  --space-border: #a0bfb4;
+}
+[data-domain="agent-connectivity-state"] {
+  --space-color: #355e80;
+  --space-tint: #dfeaf2;
+  --space-border: #a7bfd1;
+}
+[data-domain="inference-infrastructure"] {
+  --space-color: #4e6086;
+  --space-tint: #e3e7f1;
+  --space-border: #adb9d1;
+}
+[data-domain="open-models"] {
+  --space-color: #506538;
+  --space-tint: #e6ecda;
+  --space-border: #b5c49a;
+}
+
+:is(.diagram-cell, .diagram-band, .stack-map-cell, .stack-map-band) {
+  background: var(--space-tint);
+  border-color: var(--space-border);
+}
+:is(.diagram-cell, .diagram-band) strong,
+.diagram-cell .diagram-index,
+.diagram-cell-footer,
+.diagram-band > .diagram-index,
+.diagram-band > span:not(.diagram-index),
+.diagram-band svg {
+  color: var(--space-color);
+}
+:is(.diagram-cell, .diagram-band, .stack-map-cell, .stack-map-band):hover {
+  background: var(--space-tint);
+  border-color: var(--space-color);
+  box-shadow: inset 0 0 0 1px var(--space-color);
+}
+.diagram-band.band-highlight {
+  background: var(--space-color);
+  border-color: var(--space-color);
+}
+.diagram-band.band-highlight :is(strong, .diagram-index, span, svg) {
+  color: #fff9f3;
+}
+.diagram-band.band-highlight:hover {
+  background: #5d3d5f;
+}
+.stack-map-cell h2,
+.stack-map-band h2,
+.stack-map-count,
+.stack-map-cell > svg,
+.stack-map-band > svg,
+.stack-map-cell .eyebrow,
+.stack-map-band > .eyebrow {
+  color: var(--space-color);
+}
+.stack-map-cell :is(p, .stack-preview),
+.stack-map-band :is(p, .stack-preview),
+.stack-map-count small {
+  color: #555d55;
+}
+.stack-map-cell .stack-preview {
+  border-top-color: var(--space-border);
+}
+.stack-map-cell.active,
+.stack-map-band.active {
+  background: var(--space-tint);
+  border-color: var(--space-color);
+  box-shadow: inset 0 0 0 1px var(--space-color);
+}
+
+/* Task colors describe the task, independently of any readiness verdict. */
+[data-task="models"] {
+  --task-color: #506538;
+  --task-tint: #e6ecda;
+  --task-border: #b5c49a;
+}
+[data-task="tools"] {
+  --task-color: #355e80;
+  --task-tint: #dfeaf2;
+  --task-border: #a7bfd1;
+}
+[data-task="memory"] {
+  --task-color: #30665f;
+  --task-tint: #deece5;
+  --task-border: #a0bfb4;
+}
+[data-task="safety"] {
+  --task-color: #795b17;
+  --task-tint: #f1e8ca;
+  --task-border: #d3c085;
+}
+[data-task="workflows"] {
+  --task-color: #704b70;
+  --task-tint: #eee2ed;
+  --task-border: #c5abc3;
+}
+[data-task="evaluate"] {
+  --task-color: #9b4437;
+  --task-tint: #f3e0d9;
+  --task-border: #d5aaa0;
+}
+[data-task="deploy"] {
+  --task-color: #4e6086;
+  --task-tint: #e3e7f1;
+  --task-border: #adb9d1;
+}
+.task-link[data-task] small {
+  color: var(--task-color, var(--accent));
+}
+.task-link[data-task]:not([data-task=""]):hover,
+.task-link[data-task]:not([data-task=""]).active {
+  color: var(--task-color);
+  background: var(--task-tint);
+  border-color: var(--task-border);
+}
+.task-link[data-task].active :is(.task-count, small) {
+  color: var(--task-color, var(--accent));
+}
+.task-context[data-task] {
+  background: var(--task-tint);
+  border-left-color: var(--task-color);
+}
+.task-context[data-task] > .eyebrow,
+.task-context[data-task] h3,
+.task-context[data-task] details a {
+  color: var(--task-color);
+}
+.task-context[data-task] details {
+  border-top-color: var(--task-border);
+}
+
+/* Color carries through the catalog and into a solution's source context. */
+.catalog-table .space-link[data-domain] {
+  color: var(--space-color);
+  text-decoration: underline;
+  text-decoration-color: var(--space-border);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+.catalog-table tbody tr[data-domain]:hover {
+  background: var(--space-tint);
+}
+.catalog-table tbody tr[data-domain]:hover :is(.solution-summary, .entry-kind, .readiness.not-assessed) {
+  color: #555d55;
+}
+.solution-page[data-domain] .solution-header .eyebrow {
+  color: var(--space-color);
+}
+.solution-page[data-domain] .solution-aside > section:first-child {
+  border-bottom-color: var(--space-border);
+}
+.solution-page[data-domain] .catalog-context {
+  border-bottom-color: var(--space-border);
+}
+.solution-page[data-domain] .catalog-context > .eyebrow {
+  color: var(--space-color);
+}
+.catalog-table thead,
+.comparison-table thead {
+  background: #e6ebe1;
+}
+.catalog-table th {
+  color: #53634d;
+}
+.readiness.established {
+  color: #31654d;
+}
+.readiness.established .status-dot {
+  background: #31654d;
+  border-color: #31654d;
+}
+.readiness.usable {
+  color: #536338;
+}
+.readiness.usable .status-dot {
+  background: #6c7e48;
+  border-color: #6c7e48;
+}
+.readiness.experimental {
+  color: #98591f;
+}
+.readiness.experimental .status-dot {
+  background: #98591f;
+  border-color: #98591f;
+}
+
+.hero-eyebrow .accent-dot {
+  background: #497258;
+}
+.button.primary {
+  background: #365b4a;
+  border-color: #365b4a;
+}
+.button.primary:hover {
+  background: #294b3a;
+  border-color: #294b3a;
+}
+.editorial-banner {
+  border-top-color: #c7957d;
+  background: #f1e6da;
+}
+.editorial-banner > .eyebrow {
+  color: #8a4935;
+}
+.editorial-banner p {
+  color: #555d55;
+}
+.site-footer {
+  border-top-color: #bdcbb4;
+}
+.footer-brand {
+  color: #365b4a;
+}
+.compare-tray {
+  background: #293f35;
+}
+.compare-tray .button.primary {
+  border-color: #869c86;
+}
+.compare-tray .eyebrow {
+  color: #c6d4bd;
+}

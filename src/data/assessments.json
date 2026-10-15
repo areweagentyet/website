@@ -1,0 +1,203 @@
+{
+  "LangGraph": {
+    "readiness": "established",
+    "reviewed": "2026-10-14",
+    "summary": "Stateful agent orchestration with explicit control flow, checkpoints and human review.",
+    "verdict": "A well-documented foundation for custom, long-running agents. Published deployment claims and a maintained release line support an established rating; application reliability still depends on workflow design.",
+    "adoption": "Publisher names Klarna, Uber and J.P. Morgan as users. This is publisher-reported deployment evidence, not an independent usage count.",
+    "dx": "Graph and functional APIs, tutorials and persistence integrations. The lower-level model gives control but requires explicit state design.",
+    "maintenance": "Release notes include LangGraph 1.2.15 on October 12, 2026. Issue response times and long-term support were not audited.",
+    "compatibility": "Python and a separate JavaScript implementation; storage-backed checkpointers. MIT core; hosted LangSmith services have separate terms.",
+    "license": "MIT core",
+    "languages": ["Python", "TypeScript"],
+    "deployment": "Library / self-managed / hosted options",
+    "limitations": ["Choose and operate a durable checkpoint store for real recovery.", "External side effects and resume behavior need application-level testing."],
+    "evidence": [
+      {"title": "Overview & reported users", "url": "https://docs.langchain.com/oss/python/langgraph/overview", "note": "Documents orchestration capabilities and names users; deployment claims are publisher-reported."},
+      {"title": "Repository & license", "url": "https://github.com/langchain-ai/langgraph", "note": "Public implementation, language variants and MIT license."},
+      {"title": "Release history", "url": "https://github.com/langchain-ai/langgraph/releases", "note": "Dated releases and fixes; not a support commitment."}
+    ]
+  },
+  "Pydantic AI": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "A typed Python agent framework with validated outputs and composable tools.",
+    "verdict": "A documented option for Python applications that need typed dependencies and structured results. Optional durable engines address execution recovery; they are a separate integration.",
+    "adoption": "Documented provider and runtime integrations are ecosystem signals. Independent deployment volume was not assessed.",
+    "dx": "Python type hints, Pydantic output validation, runnable examples and explicit tool definitions.",
+    "maintenance": "Version 2.56.0 was published October 13, 2026, with compatibility notes. Support responsiveness was not audited.",
+    "compatibility": "Python SDK, multiple model providers and optional Temporal/DBOS/Prefect integrations. MIT code; provider and hosting costs are separate.",
+    "license": "MIT", "languages": ["Python"], "deployment": "Application library",
+    "limitations": ["Validated output schemas do not guarantee factually correct results.", "Durable execution requires configuring an additional engine."],
+    "evidence": [
+      {"title": "Repository & typed API examples", "url": "https://github.com/pydantic/pydantic-ai", "note": "Demonstrates agents, typed output, tools and integrations; identifies MIT license."},
+      {"title": "Durable execution", "url": "https://pydantic.dev/docs/ai/capabilities/durable_execution/overview/", "note": "Explains durable engine integrations and the distinction between durability and conversation storage."},
+      {"title": "Release history", "url": "https://github.com/pydantic/pydantic-ai/releases", "note": "Dated releases and migration/compatibility notes."}
+    ]
+  },
+  "Temporal": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Durable execution for workflows that must recover across failures and long waits.",
+    "verdict": "A documented workflow foundation with explicit recovery semantics. It supplies execution durability, not an agent's reasoning or decision policy.",
+    "adoption": "SDKs, deployment guides and integrations are documented. Independent adoption scale was not assessed in this review.",
+    "dx": "Quickstarts and SDK guides cover workflows and activities. Replay rules introduce a learning curve beyond a simple agent loop.",
+    "maintenance": "Public server releases and change notes were reviewed. Release cadence, issue response and support SLAs were not audited.",
+    "compatibility": "Multiple SDK languages; self-hosted service or Temporal Cloud. MIT server; SDK and Cloud terms should be checked separately.",
+    "license": "MIT server", "languages": ["Python", "TypeScript", "Go", "Java"], "deployment": "Self-hosted service / managed cloud",
+    "limitations": ["Workflow code must obey deterministic replay rules.", "Activities that produce external effects need appropriate retry and idempotency design."],
+    "evidence": [
+      {"title": "Platform documentation", "url": "https://docs.temporal.io/", "note": "SDK, deployment, integration and durable execution documentation."},
+      {"title": "Workflow execution semantics", "url": "https://docs.temporal.io/workflow-execution", "note": "Defines execution, history and workflow recovery; editorial caveats follow from these semantics."},
+      {"title": "Server source & license", "url": "https://github.com/temporalio/temporal", "note": "Public service implementation and license."},
+      {"title": "Server releases", "url": "https://github.com/temporalio/temporal/releases", "note": "Public version history; not a guarantee of support."}
+    ]
+  },
+  "Mem0": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Persistent, retrievable memories for users, sessions and agent applications.",
+    "verdict": "Runnable SDK examples make this a practical memory-layer candidate. Validate extraction and recall on your own data, especially when comparing the open SDK with the managed service.",
+    "adoption": "SDK and integration availability are documented signals. Deployment counts and community responsiveness were not independently verified.",
+    "dx": "Python and JavaScript examples expose add/search operations; managed and self-managed paths have different operating effort.",
+    "maintenance": "Public release history is available and was reviewed. No issue-response or long-term maintenance guarantee is inferred.",
+    "compatibility": "Apache 2.0 SDK; model, embedding and storage configuration are additional dependencies. Managed service capabilities and costs differ.",
+    "license": "Apache 2.0 SDK", "languages": ["Python", "TypeScript"], "deployment": "Self-managed SDK / managed service",
+    "limitations": ["Published managed-service benchmark scores must not be assumed for the open SDK.", "Memory extraction and retrieval quality need application-specific evaluation."],
+    "evidence": [
+      {"title": "Repository, SDKs & benchmark caveat", "url": "https://github.com/mem0ai/mem0", "note": "Documents memory APIs, Apache license and explicit differences between managed benchmarks and open code."},
+      {"title": "Release history", "url": "https://github.com/mem0ai/mem0/releases", "note": "Public package changes; responsiveness was not measured."}
+    ]
+  },
+  "Graphiti": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Temporal knowledge graphs for agent context that changes over time.",
+    "verdict": "A documented choice when entity relationships and historical facts matter. Its graph-database and structured-output dependencies make it a more involved integration than a simple memory API.",
+    "adoption": "Database and model-provider integrations are documented. No independent deployment-volume claim is made.",
+    "dx": "Python quickstarts and graph ingestion/query APIs. Database setup and model behavior require additional debugging.",
+    "maintenance": "Public release notes were reviewed. Database compatibility and migrations should be checked for the selected version.",
+    "compatibility": "Python with supported graph stores and LLM/embedding services. Apache 2.0 library; graph database and provider terms remain separate.",
+    "license": "Apache 2.0", "languages": ["Python"], "deployment": "Library + graph database",
+    "limitations": ["Models without reliable structured output can cause ingestion failures.", "Operate a supported graph database and validate temporal retrieval on your workload."],
+    "evidence": [
+      {"title": "Graph model, requirements & license", "url": "https://github.com/getzep/graphiti", "note": "Describes temporal graphs, supported stores, provider requirements and structured-output warnings."},
+      {"title": "Release history", "url": "https://github.com/getzep/graphiti/releases", "note": "Public package releases and compatibility changes."}
+    ]
+  },
+  "E2B": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Programmatic cloud sandboxes for executing agent-generated code.",
+    "verdict": "Python and TypeScript quickstarts provide a direct path to managed code execution. Assess service limits and infrastructure requirements for the deployment path you choose.",
+    "adoption": "Public SDKs and runnable integration examples are evidence of ecosystem access. Independent usage scale was not assessed.",
+    "dx": "Create a sandbox, run commands and manage its lifecycle through SDK APIs. The hosted quickstart requires an API key.",
+    "maintenance": "Public SDK releases were reviewed. Hosted-service uptime and issue-response times were not audited.",
+    "compatibility": "Python and JavaScript/TypeScript SDKs. Apache 2.0 code; hosted compute, infrastructure and service terms are separate.",
+    "license": "Apache 2.0 code", "languages": ["Python", "TypeScript"], "deployment": "Managed sandbox / infrastructure option",
+    "limitations": ["An open SDK does not imply free hosted execution.", "Sandbox network access, resource limits and secret handling need explicit configuration."],
+    "evidence": [
+      {"title": "Sandbox API & quickstart", "url": "https://github.com/e2b-dev/E2B", "note": "Documents isolated execution, SDKs, license and API-key setup."},
+      {"title": "Release history", "url": "https://github.com/e2b-dev/E2B/releases", "note": "Public SDK package changes; infrastructure support not audited."}
+    ]
+  },
+  "Firecracker": {
+    "readiness": "established", "reviewed": "2026-10-14",
+    "summary": "KVM-based microVMs for isolating lightweight compute workloads.",
+    "verdict": "A proven infrastructure primitive with documented AWS Lambda and Fargate origins. Established applies to the microVM technology, not to an end-to-end agent sandbox service.",
+    "adoption": "AWS documents its development for Lambda and Fargate; the repository lists runtime integrations. This does not establish adoption by agent developers specifically.",
+    "dx": "Release binaries, getting-started guides and a control API. Requires systems and host-operating expertise.",
+    "maintenance": "Public releases and change notes were reviewed. Host kernel, microcode and guest updates remain operational responsibilities.",
+    "compatibility": "Linux/KVM hosts; Apache 2.0. Requires host support and a configured guest image; not a portable browser sandbox.",
+    "license": "Apache 2.0", "languages": ["Rust", "HTTP API"], "deployment": "Linux / KVM infrastructure",
+    "limitations": ["Requires a correctly configured Linux/KVM host and guest lifecycle.", "MicroVM isolation alone does not define tool permissions or network policy."],
+    "evidence": [
+      {"title": "Architecture, AWS usage & license", "url": "https://github.com/firecracker-microvm/firecracker", "note": "Describes KVM microVMs, AWS Lambda/Fargate origins and Apache 2.0 license."},
+      {"title": "Release history", "url": "https://github.com/firecracker-microvm/firecracker/releases", "note": "Published binaries and release change notes."}
+    ]
+  },
+  "Langfuse": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Traces, evaluations and prompt management for agent applications.",
+    "verdict": "A documented observability and evaluation option with OpenTelemetry and SDK integrations. Operating a self-hosted instance requires more than adding an SDK.",
+    "adoption": "Python/JS SDK and framework integrations are documented. Integration breadth is not a deployment count.",
+    "dx": "Tracing quickstarts, an example project and evaluation workflows support incremental adoption.",
+    "maintenance": "Current documentation describes versioned platform and SDK compatibility. Release cadence and support responsiveness were not audited.",
+    "compatibility": "Python/JS and OpenTelemetry. MIT core with separately licensed enterprise portions; inspect the selected deployment's license and infrastructure needs.",
+    "license": "MIT core / enterprise terms", "languages": ["Python", "TypeScript", "OpenTelemetry"], "deployment": "Self-hosted / managed cloud",
+    "limitations": ["Traces explain execution but do not by themselves measure outcome correctness.", "Self-hosting adds storage and operational dependencies; enterprise features have separate terms."],
+    "evidence": [
+      {"title": "Platform capabilities & integrations", "url": "https://langfuse.com/docs", "note": "Documents tracing, evaluation, SDKs, OpenTelemetry and self-hosting."},
+      {"title": "Repository & licensing", "url": "https://github.com/langfuse/langfuse", "note": "Distinguishes open core from enterprise licensing; includes release links."}
+    ]
+  },
+  "promptfoo": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Configurable evaluations and red-team tests for models and agent applications.",
+    "verdict": "A documented CLI and library for repeatable, workload-specific evaluation. The quality of assertions and test coverage determines what passing results mean.",
+    "adoption": "The repository reports usage by OpenAI and Anthropic. This is publisher-reported evidence, not an independently measured market share.",
+    "dx": "Declarative test configurations, a CLI, output comparisons and CI/CD integration.",
+    "maintenance": "Public repository and release links are available. Release cadence and support responsiveness were not audited.",
+    "compatibility": "Node-based CLI/library with multiple and custom model providers. MIT core; provider usage and hosted/enterprise features have separate terms.",
+    "license": "MIT core", "languages": ["TypeScript", "CLI", "YAML"], "deployment": "Local CLI / CI / hosted options",
+    "limitations": ["A passing suite measures its configured cases rather than universal reliability.", "Model-graded assertions add judge-model cost and potential bias."],
+    "evidence": [
+      {"title": "Evaluation & CI documentation", "url": "https://www.promptfoo.dev/docs/intro/", "note": "Explains test configurations, assertions, custom providers, CLI/library and CI usage."},
+      {"title": "Repository & reported usage", "url": "https://github.com/promptfoo/promptfoo", "note": "Public implementation, license and publisher-reported organizational usage."}
+    ]
+  },
+  "Playwright": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Browser automation and testing across Chromium, Firefox and WebKit.",
+    "verdict": "A documented automation primitive for browser actions and testing. Pair it with an agent framework and an appropriate isolation boundary when executing untrusted instructions.",
+    "adoption": "Cross-platform browser and CI support are documented. Agent-specific deployment volume was not assessed.",
+    "dx": "Installation tooling, code generation, assertions and debugging support. Browser binaries add installation and deployment requirements.",
+    "maintenance": "Official installation docs explain version and browser updates. Issue responsiveness and release cadence were not audited.",
+    "compatibility": "JavaScript/TypeScript, Python, Java and .NET APIs; Windows, Linux and macOS. Apache 2.0 code; browser dependencies apply.",
+    "license": "Apache 2.0", "languages": ["TypeScript", "Python", "Java", ".NET"], "deployment": "Local process / CI / remote browser",
+    "limitations": ["Browser automation is not a sandbox or permission system.", "Dynamic websites and authenticated sessions still require robust application-specific handling."],
+    "evidence": [
+      {"title": "Installation & supported browsers", "url": "https://playwright.dev/docs/intro", "note": "Documents browser engines, platforms, tooling and upgrade workflow."},
+      {"title": "Public implementation", "url": "https://github.com/microsoft/playwright", "note": "Source, Apache license and language bindings."}
+    ]
+  },
+  "vLLM": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Model inference and serving with batching and distributed execution options.",
+    "verdict": "A documented serving foundation for supported model and hardware combinations. Capacity and latency require workload-specific measurement.",
+    "adoption": "Model, backend and serving integrations are documented. Independent deployment counts were not assessed.",
+    "dx": "Serving guides, supported-model lists and API examples. Hardware and model compatibility must be checked for the chosen release.",
+    "maintenance": "Current official docs expose stable/latest and version-specific capabilities. Release cadence and support responsiveness were not audited.",
+    "compatibility": "Python and HTTP serving interfaces; hardware-specific backends and model requirements. Apache 2.0 engine; model weight licenses are separate.",
+    "license": "Apache 2.0 engine", "languages": ["Python", "HTTP API"], "deployment": "Self-hosted inference service",
+    "limitations": ["Feature support varies by model, hardware backend and release.", "Published API compatibility does not guarantee equivalent tool-calling behavior or throughput."],
+    "evidence": [
+      {"title": "Serving & supported backends", "url": "https://docs.vllm.ai/en/latest/", "note": "Documents inference, serving, supported models and hardware-dependent features."},
+      {"title": "Source & license", "url": "https://github.com/vllm-project/vllm", "note": "Public engine implementation and Apache 2.0 license."}
+    ]
+  },
+  "llama.cpp": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Local C/C++ inference and an HTTP server across multiple hardware backends.",
+    "verdict": "A documented path to local inference and serving. Choose a compatible model, format and backend before treating it as an agent's model runtime.",
+    "adoption": "Hardware backends and downstream tools are documented ecosystem signals. Deployment scale was not independently measured.",
+    "dx": "CLI, server, build guides and troubleshooting material. Model conversion and backend selection can add setup effort.",
+    "maintenance": "The repository documents a release process and active contribution workflow. Release cadence and support responsiveness were not audited.",
+    "compatibility": "C/C++, CLI and REST API, GGUF models and varied CPU/GPU backends. MIT runtime; each model has its own license.",
+    "license": "MIT runtime", "languages": ["C/C++", "CLI", "HTTP API"], "deployment": "Local inference / self-hosted server",
+    "limitations": ["Model format and backend compatibility must be checked separately.", "Tool calling and structured output depend on the selected model and configuration."],
+    "evidence": [
+      {"title": "Runtime, backends & MIT license", "url": "https://github.com/ggml-org/llama.cpp", "note": "Documents inference, server and CLI tools, model format, backends and release process."}
+    ]
+  },
+  "LangChain": {
+    "readiness": "usable", "reviewed": "2026-10-14",
+    "summary": "Agent loops, model abstractions and integrations built on LangGraph.",
+    "verdict": "A documented higher-level starting point for model-and-tool agent applications. Distinguish the core framework from the separate deployment and observability products.",
+    "adoption": "A documented integration ecosystem is available. This review does not equate integration count with real deployments.",
+    "dx": "Agent quickstarts and provider/tool abstractions reduce initial wiring. Version-specific guides matter because abstractions evolve.",
+    "maintenance": "Current overview and public implementation were reviewed. Issue response times and long-term support were not assessed.",
+    "compatibility": "Python and a separate JavaScript/TypeScript implementation. MIT core; external integrations and hosted services have their own requirements.",
+    "license": "MIT core", "languages": ["Python", "TypeScript"], "deployment": "Application library",
+    "limitations": ["Integrations differ in capability and provider behavior.", "An agent loop still needs tool permissions, evaluation and an operating environment."],
+    "evidence": [
+      {"title": "Agent framework overview", "url": "https://docs.langchain.com/oss/python/langchain/overview", "note": "Documents agent loops, integrations and relationship to LangGraph."},
+      {"title": "Source & license", "url": "https://github.com/langchain-ai/langchain", "note": "Public framework and MIT license; external service terms remain separate."}
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+---
+import { domains, domainEntries } from '../lib/catalog';
+import Icon from './Icon.astro';
+---
+<div class="stack-diagram">
+  <div class="diagram-caption"><span class="eyebrow">THE AGENT STACK</span><span class="diagram-live">8 connected spaces</span></div>
+  <div class="diagram-top">
+    {domains.slice(0, 3).map(d => <a class="diagram-cell" data-domain={d.id} href={`/stack/?domain=${d.id}#catalog`}><span class="diagram-index">{d.number}</span><strong>{d.short}</strong><span class="diagram-cell-footer">{domainEntries(d.id).length} entries <Icon name="diagonal" size={13} /></span></a>)}
+  </div>
+  <div class="diagram-connector" aria-hidden="true"><span>↓</span><span>↓</span><span>↓</span></div>
+  <div class="diagram-bands">
+    {domains.slice(3).map((d, i) => <a class:list={['diagram-band', { 'band-highlight': i === 0 }]} data-domain={d.id} href={`/stack/?domain=${d.id}#catalog`}><span class="diagram-index">{d.number}</span><strong>{d.short}</strong><span>{domainEntries(d.id).length}</span><Icon name="diagonal" size={15} /></a>)}
+  </div>
+  <p class="diagram-note">Explore a layer. See what fits.</p>
+</div>

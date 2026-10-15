@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Explorer from '../components/Explorer.astro';
+import StackDiagram from '../components/StackDiagram.astro';
+import Icon from '../components/Icon.astro';
+---
+<Layout>
+  <section class="hero container">
+    <div class="hero-copy"><div class="eyebrow hero-eyebrow"><span class="accent-dot"></span> A DEVELOPER FIELD GUIDE <span class="edition">VOL. 01 / 2026</span></div><h1 aria-label="Are we agent yet?">Are we<br /><em>agent</em> yet?<span class="title-period" aria-hidden="true">↗</span></h1><p class="hero-deck">The building blocks are here.<br /> Let's see what you can build.</p><p class="hero-description">Explore the tools, protocols and models behind agent applications. Understand what works, what it takes, and what still needs work.</p><a class="hero-link" href="#catalog">Find your building blocks <Icon name="arrow" size={20} /></a></div>
+    <StackDiagram />
+  </section>
+  <div class="edition-strip container"><span><strong>239</strong> building blocks <span class="strip-divider">/</span> <strong>8</strong> spaces <span class="strip-divider">/</span> <strong>13</strong> evidence-backed assessments</span><span>First review <time datetime="2026-10-14">14 OCT 2026</time></span></div>
+  <Explorer />
+  <section class="editorial-banner container"><span class="eyebrow">A MAP, NOT A LEADERBOARD</span><div><h2>Read the evidence.<br />Make your own call.</h2><p>Readiness depends on what you're building. We separate maturity, adoption signals, developer experience and access so you can see the tradeoffs.</p><a href="/methodology/" class="inline-link">Inside the methodology <Icon name="arrow" size={18} /></a></div><span class="editorial-symbol" aria-hidden="true">?</span></section>
+</Layout>

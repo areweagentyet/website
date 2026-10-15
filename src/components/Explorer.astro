@@ -1,0 +1,46 @@
+---
+import { catalog, domains, tasks, kindLabels } from '../lib/catalog';
+import { filterCatalog } from '../lib/explorer';
+import Icon from './Icon.astro';
+import Readiness from './Readiness.astro';
+interface Props { stack?: boolean }
+const { stack = false } = Astro.props;
+const entries = filterCatalog(catalog, {});
+---
+<section class="explorer container" id="catalog" data-explorer>
+  <div class="section-heading"><div><span class="eyebrow">{stack ? 'THE COMPLETE INVENTORY' : 'FIND YOUR BUILDING BLOCKS'}</span><h2>{stack ? 'Explore the landscape.' : 'What are you building?'}</h2></div><p>{catalog.length} entries. Many ways in.<br /><a href="/methodology/">How we assess readiness <span aria-hidden="true">↗</span></a></p></div>
+  <div class="explorer-layout">
+    <aside class="task-sidebar" aria-label="Browse by developer task">
+      <span class="eyebrow sidebar-label">BROWSE BY TASK</span>
+      <div class="task-links">
+        <a href="#catalog" data-task="" class="task-link active" aria-current="true"><span>All building blocks</span><span class="task-count">239</span></a>
+        {tasks.map(t => <a href={`/?task=${t.id}#catalog`} data-task={t.id} class="task-link"><span><small>{t.number}</small>{t.title}</span><span class="task-count">{catalog.filter(e => e.tasks.includes(t.id)).length}</span></a>)}
+      </div>
+      <div class="sidebar-note"><span class="note-mark" aria-hidden="true">↳</span><p>A framework, a protocol and a model aren't interchangeable. <a href="/methodology/#entry-types">Know the building blocks.</a></p></div>
+    </aside>
+    <div class="explorer-main">
+      <div id="task-context" class="task-context" hidden><span class="eyebrow" id="task-question"></span><h3 id="task-title"></h3><p id="task-guide"></p><details><summary>What to watch for</summary><p id="task-caveat"></p><a id="task-caveat-source" href="/methodology/">Read the supporting assessment ↗</a></details></div>
+      <form id="filters" class="filters" role="search" aria-label="Search and filter catalog">
+        <label class="search-field"><Icon name="search" size={20} /><span class="sr-only">Search solutions</span><input name="q" type="search" placeholder="Search projects, protocols, models…" autocomplete="off" /><kbd aria-hidden="true">/</kbd></label>
+        <div class="filter-row">
+          <label><span class="sr-only">Stack category</span><select name="domain"><option value="">All stack layers</option>{domains.map(d => <option value={d.id}>{d.short}</option>)}</select></label>
+          <label><span class="sr-only">Entry type</span><select name="kind"><option value="">All entry types</option>{Object.entries(kindLabels).map(([k, v]) => <option value={k}>{v}</option>)}</select></label>
+          <label><span class="sr-only">Readiness</span><select name="readiness"><option value="">Any readiness</option><option value="assessed">Assessed only</option><option value="established">Established</option><option value="usable">Usable</option><option value="experimental">Experimental</option><option value="not-assessed">Not assessed</option></select></label>
+          <button class="text-button" type="button" id="clear-filters">Reset <Icon name="close" size={13} /></button>
+        </div>
+      </form>
+      <div class="results-bar"><p id="result-count" role="status" aria-live="polite">239 building blocks <span>· 13 assessed</span></p><label class="sort-field"><span class="sr-only">Sort solutions</span><select name="sort" form="filters"><option value="reviewed">Assessed first</option><option value="name">Name A–Z</option></select></label></div>
+      <div class="table-scroll">
+        <table class="catalog-table">
+          <thead><tr><th scope="col">SOLUTION</th><th scope="col">SPACE / TYPE</th><th scope="col">READINESS</th><th scope="col"><span class="sr-only">Compare</span><Icon name="compare" size={17} /></th></tr></thead>
+          <tbody id="catalog-rows">{entries.map(e => <tr data-entry={e.slug} data-domain={e.domainId}><td><a class="solution-name" href={`/solutions/${e.slug}/`}>{e.name}<Icon name="diagonal" size={13} /></a><p class="solution-summary">{e.summary}</p></td><td><a class="space-link" data-domain={e.domainId} href={`/stack/?domain=${e.domainId}#catalog`}>{domains.find(d => d.id === e.domainId)?.short}</a><span class="entry-kind">{kindLabels[e.kind]}</span></td><td><Readiness value={e.readiness} /></td><td><button type="button" class="compare-toggle icon-button" data-compare={e.slug} aria-label={`Add ${e.name} to comparison`} aria-pressed="false"><Icon name="plus" size={17} /></button></td></tr>)}</tbody>
+        </table>
+      </div>
+      <div id="empty-results" class="empty-state" hidden><span aria-hidden="true">∅</span><h3>No matching building blocks.</h3><p>Try a broader search or remove a filter. An empty result is a catalog gap, not proof that no solution exists.</p><button class="button" id="empty-reset">Clear filters <Icon name="arrow" size={16} /></button></div>
+      <div class="load-more-row"><p id="shown-count">Browse all 239 entries</p><button class="button" id="load-more" hidden>Show more solutions <Icon name="plus" size={16} /></button></div>
+      <p class="catalog-footnote"><span class="status-dot"></span> “Not assessed” means we haven't reviewed the evidence. It isn't a negative verdict.</p>
+      <noscript><p class="notice">All entries are shown. Enable JavaScript to search, filter and compare.</p></noscript>
+    </div>
+  </div>
+</section>
+<script>import '../scripts/explorer.ts';</script>

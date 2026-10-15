@@ -1,0 +1,17 @@
+{
+  "name": "are-we-agent-yet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.19.0" },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test tests/*.test.mjs",
+    "import:catalog": "node scripts/import-catalog.mjs"
+  },
+  "dependencies": { "astro": "7.3.2" },
+  "devDependencies": { "@astrojs/check": "0.9.10", "typescript": "5.9.3", "@types/node": "^22.0.0" }
+}
