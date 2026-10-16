@@ -23,7 +23,7 @@ const pageTitle = title ? `${title} — Are We Agent Yet?` : 'Are We Agent Yet? 
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="wordmark" href="/" aria-label="Are We Agent Yet? Home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Are We Agent Yet<span class="brand-question">?</span></span></a>
+        <a class="wordmark" href="/" aria-label="Are We Agent Yet? Home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Are We <em class="brand-agent">Agent</em> Yet?</span></a>
         <nav class="main-nav" aria-label="Main navigation">
           <a href="/" aria-current={active === 'explore' ? 'page' : undefined}>Explore</a>
           <a href="/stack/" aria-current={active === 'stack' ? 'page' : undefined}>The stack</a>
@@ -34,8 +34,8 @@ const pageTitle = title ? `${title} — Are We Agent Yet?` : 'Are We Agent Yet? 
     </header>
     <main id="main"><slot /></main>
     <footer class="site-footer container">
-      <div class="footer-top"><a class="footer-brand" href="/">Are We Agent Yet?</a><p>An independent field guide.<br />Evidence over hype. Always a work in progress.</p><a href="/methodology/#contributing">Help improve the guide <Icon name="diagonal" size={17} /></a></div>
-      <div class="footer-bottom"><span>Developer edition · 2026</span><div><a href="/downloads/project-catalog.json" download>Catalog JSON</a><a href="/downloads/project-catalog.csv" download>CSV</a><a href="/methodology/#sources">Sources & dates</a></div><span>Built for people building agents.</span></div>
+      <div class="footer-top"><a class="footer-brand" href="/">Are We <em class="brand-agent">Agent</em> Yet?</a><p>An independent field guide.<br />Evidence over hype. Always a work in progress.</p><a href="/methodology/#contributing">Help improve the guide <Icon name="diagonal" size={17} /></a></div>
+      <div class="footer-bottom"><span>Developer edition · 2026</span><div><a href="/downloads/project-catalog.json" download>Catalog JSON</a><a href="/downloads/project-catalog.csv" download>CSV</a></div><span>Built for people building agents.</span></div>
     </footer>
     <aside id="compare-tray" class="compare-tray" aria-label="Selected comparisons" hidden>
       <div><span class="eyebrow">YOUR SHORTLIST</span><div id="compare-selection"></div></div>

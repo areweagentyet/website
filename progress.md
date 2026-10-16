@@ -39,3 +39,13 @@
 
 ## Headline emphasis
 - Moved the homepage's red italic emphasis from “yet?” to “agent.” Rebuilt the production preview and verified the generated headline emphasizes only “agent.”
+
+## Solution quick links
+- Added prominent GitHub links with the GitHub icon at the top of At a glance. Exact repository/subdirectory URLs are preserved; organization links remain available for model families. Other code hosts, model collections and specifications receive accurate labels.
+- Added 150 separately sourced website/documentation links for 141 entries in `src/data/project-links.json`, checked October 15. Used official repository/organization website fields and publisher pages; kept the original 239-entry catalog unchanged. Added editing guidance to README.
+- All 13 tests pass; Astro check reports no errors/warnings/hints; build produces 244 static pages. Audited all 394 quick links across 239 generated profiles. Browser checks passed on seven representative profiles at 1440, 390 and 320px: icons and links visible, tap targets at least 44px, no page overflow or runtime errors. Inspected desktop/mobile screenshots in `output/playwright/solution-links-*.png`.
+
+## Branding and methodology cleanup
+- Extended the red italic Agent emphasis to the shared header and footer branding and the methodology introduction. Removed the former question-mark emphasis.
+- Removed the Sources & dates footer link, methodology section and navigation item; renumbered Contributing to 06. Removed repeated source-snapshot/landscape references from solution pages and deleted unused section styles/imports.
+- Build and Astro check pass (0 errors/warnings/hints). Audited all 244 generated pages for emphasized shared branding and absence of removed section references. Verified five routes at 1440, 390 and 320px with no horizontal overflow or browser errors; inspected header/footer/mobile screenshots.

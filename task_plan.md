@@ -11,6 +11,8 @@ Build the approved Astro technical field guide inside `website/`, preserving the
 5. [complete] Document editing/rebuild workflow and hand off a running local preview. README complete; production preview serves on http://127.0.0.1:4321.
 6. [complete] Increase typography by 4px (3pt), set a 13px minimum for small labels, and verify desktop/mobile layouts.
 7. [complete] Add a restrained color palette to stack layers, task areas, catalog cues and supporting surfaces; preserve geometry and typography, then verify contrast and responsive rendering.
+8. [complete] Add prominent GitHub/project-website links with icons to every solution's At a glance section. Preserve the source snapshot; keep 150 sourced enrichment links separate. All 13 tests, Astro check and build pass; audited 394 rendered quick links across 239 pages and 21 desktop/mobile browser layouts.
+9. [complete] Extend Agent emphasis throughout visible site branding; remove the Sources & dates link, methodology section and page references. Audited all 244 built pages and verified 15 desktop/mobile layouts; build and typecheck pass.
 
 ## Decisions
 - Repository-managed structured data; user submissions come in a later phase.

@@ -70,6 +70,8 @@ Task associations come from taxonomy plus selected project capabilities. They in
 
 ## Browser validation
 
+Solution pages show GitHub and other official links in **At a glance**. Repository paths come directly from the catalog, including SDK subdirectories and organization links. Separate project websites and documentation live in `src/data/project-links.json`, keyed by exact catalog name, with a checked date and a primary source for each URL. Verify changes against the official repository homepage field or publisher page; keep documentation labeled separately and do not guess websites. The imported catalog snapshot stays unchanged.
+
 `scripts/browser-smoke.js` contains a Playwright CLI code snippet for real browser validation against a local preview on port 4321. It checks search, combined filters, reload/back state, shared comparisons, limits, profile evidence and mobile overflow. Run it through `playwright-cli run-code` with the file's function as the code argument. There is no Playwright runtime dependency in the shipped site. Screenshots and browser artifacts belong in ignored `output/playwright/`.
 
 ## Later phases

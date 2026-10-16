@@ -1,0 +1,1038 @@
+{
+  "checked": "2026-10-15",
+  "provenance": "Official GitHub repository homepage / organization website fields and official publisher pages. Source URLs are recorded per link; this metadata does not change the imported catalog.",
+  "entries": {
+    "A2A 1.0": [
+      {
+        "kind": "website",
+        "url": "https://a2a-protocol.org/",
+        "source": "https://github.com/a2aproject/A2A"
+      }
+    ],
+    "A2UI": [
+      {
+        "kind": "website",
+        "url": "https://a2ui.org/",
+        "source": "https://github.com/a2ui-project/a2ui"
+      }
+    ],
+    "AG-UI": [
+      {
+        "kind": "website",
+        "url": "https://ag-ui.com",
+        "source": "https://github.com/ag-ui-protocol/ag-ui"
+      }
+    ],
+    "Agent Lightning": [
+      {
+        "kind": "website",
+        "url": "https://microsoft.github.io/agent-lightning/",
+        "source": "https://github.com/microsoft/agent-lightning"
+      }
+    ],
+    "Agent Skills": [
+      {
+        "kind": "website",
+        "url": "https://agentskills.io",
+        "source": "https://github.com/agentskills/agentskills"
+      }
+    ],
+    "Agent TARS": [
+      {
+        "kind": "website",
+        "url": "https://agent-tars.com",
+        "source": "https://github.com/bytedance/UI-TARS-desktop"
+      }
+    ],
+    "AgentConnect": [
+      {
+        "kind": "website",
+        "url": "https://agent-network-protocol.com/",
+        "source": "https://github.com/agent-network-protocol/anp"
+      }
+    ],
+    "AGENTS.md": [
+      {
+        "kind": "website",
+        "url": "https://agents.md",
+        "source": "https://github.com/agentsmd/agents.md"
+      }
+    ],
+    "ANP": [
+      {
+        "kind": "website",
+        "url": "https://agent-network-protocol.com",
+        "source": "https://github.com/agent-network-protocol/AgentNetworkProtocol"
+      }
+    ],
+    "ART": [
+      {
+        "kind": "website",
+        "url": "https://art.openpipe.ai",
+        "source": "https://github.com/OpenPipe/ART"
+      }
+    ],
+    "AtomCode": [
+      {
+        "kind": "website",
+        "url": "https://atomcode.atomgit.com/",
+        "source": "https://github.com/atomgit-atomcode/atomcode"
+      }
+    ],
+    "AutoGen": [
+      {
+        "kind": "documentation",
+        "url": "https://microsoft.github.io/autogen/",
+        "source": "https://github.com/microsoft/autogen"
+      }
+    ],
+    "AX": [
+      {
+        "kind": "website",
+        "url": "https://agentexecutor.io",
+        "source": "https://github.com/google/ax"
+      }
+    ],
+    "Axolotl": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.axolotl.ai",
+        "source": "https://github.com/axolotl-ai-cloud/axolotl"
+      }
+    ],
+    "browser-use": [
+      {
+        "kind": "website",
+        "url": "https://browser-use.com",
+        "source": "https://github.com/browser-use/browser-use"
+      }
+    ],
+    "Cedar": [
+      {
+        "kind": "website",
+        "url": "https://www.cedarpolicy.com",
+        "source": "https://github.com/cedar-policy/cedar"
+      }
+    ],
+    "CloudEvents 1.0": [
+      {
+        "kind": "website",
+        "url": "https://cloudevents.io",
+        "source": "https://github.com/cloudevents/spec"
+      }
+    ],
+    "Cognee": [
+      {
+        "kind": "website",
+        "url": "https://www.cognee.ai",
+        "source": "https://github.com/topoteretes/cognee"
+      }
+    ],
+    "containerd": [
+      {
+        "kind": "website",
+        "url": "https://containerd.io",
+        "source": "https://github.com/containerd/containerd"
+      }
+    ],
+    "CrewAI": [
+      {
+        "kind": "website",
+        "url": "https://crewai.com",
+        "source": "https://github.com/crewAIInc/crewAI"
+      }
+    ],
+    "Dapr Agents": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.dapr.io/developing-applications/dapr-agents/",
+        "source": "https://github.com/dapr/dapr-agents"
+      }
+    ],
+    "DataFlex": [
+      {
+        "kind": "documentation",
+        "url": "https://opendcai.github.io/DataFlex-Doc/",
+        "source": "https://github.com/OpenDCAI/DataFlex"
+      }
+    ],
+    "DataFlow": [
+      {
+        "kind": "documentation",
+        "url": "https://OpenDCAI.github.io/DataFlow-Doc/",
+        "source": "https://github.com/OpenDCAI/DataFlow"
+      }
+    ],
+    "DeepEval": [
+      {
+        "kind": "website",
+        "url": "https://deepeval.com",
+        "source": "https://github.com/confident-ai/deepeval"
+      }
+    ],
+    "DeepSeek": [
+      {
+        "kind": "website",
+        "url": "https://www.deepseek.com/",
+        "source": "https://github.com/deepseek-ai"
+      }
+    ],
+    "DeepSeek Harness": [
+      {
+        "kind": "website",
+        "url": "https://deepseek.com/harness",
+        "source": "https://github.com/deepseek-ai/deepseek-harness"
+      }
+    ],
+    "DeepSpeed": [
+      {
+        "kind": "website",
+        "url": "https://www.deepspeed.ai/",
+        "source": "https://github.com/deepspeedai/DeepSpeed"
+      }
+    ],
+    "DeerFlow": [
+      {
+        "kind": "website",
+        "url": "https://deerflow.tech",
+        "source": "https://github.com/bytedance/deer-flow"
+      }
+    ],
+    "DHttp": [
+      {
+        "kind": "website",
+        "url": "https://www.dhttp.net",
+        "source": "https://github.com/genmeta/dhttp"
+      }
+    ],
+    "Dify": [
+      {
+        "kind": "website",
+        "url": "https://dify.ai",
+        "source": "https://github.com/langgenius/dify"
+      }
+    ],
+    "Dora": [
+      {
+        "kind": "website",
+        "url": "https://dora-rs.ai",
+        "source": "https://github.com/dora-rs/dora"
+      }
+    ],
+    "DSPy": [
+      {
+        "kind": "website",
+        "url": "https://dspy.ai",
+        "source": "https://github.com/stanfordnlp/dspy"
+      }
+    ],
+    "Dynamo": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.nvidia.com/dynamo/latest",
+        "source": "https://github.com/ai-dynamo/dynamo"
+      }
+    ],
+    "E2B": [
+      {
+        "kind": "website",
+        "url": "https://e2b.dev/",
+        "source": "https://e2b.dev/"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://docs.e2b.dev/",
+        "source": "https://github.com/e2b-dev/E2B"
+      }
+    ],
+    "Firecracker": [
+      {
+        "kind": "website",
+        "url": "https://firecracker-microvm.github.io/",
+        "source": "https://github.com/firecracker-microvm/firecracker"
+      }
+    ],
+    "FlagOS": [
+      {
+        "kind": "website",
+        "url": "https://flagos.io",
+        "source": "https://github.com/flagos-ai"
+      }
+    ],
+    "Gemma": [
+      {
+        "kind": "website",
+        "url": "https://deepmind.google/models/gemma/",
+        "source": "https://deepmind.google/models/gemma/"
+      }
+    ],
+    "GLM": [
+      {
+        "kind": "website",
+        "url": "https://www.zhipuai.cn/en",
+        "source": "https://github.com/zai-org"
+      }
+    ],
+    "Google ADK": [
+      {
+        "kind": "documentation",
+        "url": "https://google.github.io/adk-docs/",
+        "source": "https://github.com/google/adk-python"
+      }
+    ],
+    "goose": [
+      {
+        "kind": "documentation",
+        "url": "https://goose-docs.ai/",
+        "source": "https://github.com/aaif-goose/goose"
+      }
+    ],
+    "Graphiti": [
+      {
+        "kind": "website",
+        "url": "https://www.getzep.com/platform/graphiti/",
+        "source": "https://www.getzep.com/platform/graphiti/"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://help.getzep.com/graphiti",
+        "source": "https://github.com/getzep/graphiti"
+      }
+    ],
+    "gVisor": [
+      {
+        "kind": "website",
+        "url": "https://gvisor.dev",
+        "source": "https://github.com/google/gvisor"
+      }
+    ],
+    "Hermes Agent": [
+      {
+        "kind": "website",
+        "url": "https://hermes-agent.nousresearch.com",
+        "source": "https://github.com/NousResearch/hermes-agent"
+      }
+    ],
+    "Hugging Face Hub": [
+      {
+        "kind": "documentation",
+        "url": "https://huggingface.co/docs/huggingface_hub",
+        "source": "https://github.com/huggingface/huggingface_hub"
+      }
+    ],
+    "in-toto": [
+      {
+        "kind": "website",
+        "url": "https://in-toto.io",
+        "source": "https://github.com/in-toto/in-toto"
+      }
+    ],
+    "Kata Containers": [
+      {
+        "kind": "website",
+        "url": "https://katacontainers.io/",
+        "source": "https://katacontainers.io/"
+      }
+    ],
+    "Keycloak": [
+      {
+        "kind": "website",
+        "url": "https://www.keycloak.org",
+        "source": "https://github.com/keycloak/keycloak"
+      }
+    ],
+    "Kimi": [
+      {
+        "kind": "website",
+        "url": "https://moonshot.ai",
+        "source": "https://github.com/MoonshotAI"
+      }
+    ],
+    "KTransformers": [
+      {
+        "kind": "website",
+        "url": "https://kvcache-ai.github.io/ktransformers/",
+        "source": "https://github.com/kvcache-ai/ktransformers"
+      }
+    ],
+    "Kubernetes": [
+      {
+        "kind": "website",
+        "url": "https://kubernetes.io",
+        "source": "https://github.com/kubernetes/kubernetes"
+      }
+    ],
+    "Kueue": [
+      {
+        "kind": "website",
+        "url": "https://kueue.sigs.k8s.io",
+        "source": "https://github.com/kubernetes-sigs/kueue"
+      }
+    ],
+    "LangChain": [
+      {
+        "kind": "website",
+        "url": "https://www.langchain.com/oss-overview",
+        "source": "https://www.langchain.com/oss-overview"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://docs.langchain.com/langchain/",
+        "source": "https://github.com/langchain-ai/langchain"
+      }
+    ],
+    "Langfuse": [
+      {
+        "kind": "website",
+        "url": "https://langfuse.com",
+        "source": "https://github.com/langfuse/langfuse"
+      }
+    ],
+    "LangGraph": [
+      {
+        "kind": "website",
+        "url": "https://www.langchain.com/langgraph",
+        "source": "https://www.langchain.com/langgraph"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://docs.langchain.com/oss/python/langgraph/",
+        "source": "https://github.com/langchain-ai/langgraph"
+      }
+    ],
+    "Letta": [
+      {
+        "kind": "website",
+        "url": "https://www.letta.com/",
+        "source": "https://www.letta.com/"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://docs.letta.com/",
+        "source": "https://github.com/letta-ai/letta"
+      }
+    ],
+    "LibreChat": [
+      {
+        "kind": "website",
+        "url": "https://librechat.ai/",
+        "source": "https://github.com/LibreChat-AI/LibreChat"
+      }
+    ],
+    "Linux": [
+      {
+        "kind": "website",
+        "url": "https://www.kernel.org/",
+        "source": "https://www.kernel.org/"
+      }
+    ],
+    "LLaMA-Factory": [
+      {
+        "kind": "documentation",
+        "url": "https://llamafactory.readthedocs.io",
+        "source": "https://github.com/hiyouga/LlamaFactory"
+      }
+    ],
+    "llama.cpp": [
+      {
+        "kind": "website",
+        "url": "https://llama.app",
+        "source": "https://github.com/ggml-org/llama.cpp"
+      }
+    ],
+    "llm-d": [
+      {
+        "kind": "website",
+        "url": "https://www.llm-d.ai",
+        "source": "https://github.com/llm-d/llm-d"
+      }
+    ],
+    "LMCache": [
+      {
+        "kind": "website",
+        "url": "https://lmcache.ai/",
+        "source": "https://github.com/LMCache/LMCache"
+      }
+    ],
+    "Makepad": [
+      {
+        "kind": "website",
+        "url": "https://makepad.dev/",
+        "source": "https://github.com/makepad/makepad"
+      }
+    ],
+    "Mastra": [
+      {
+        "kind": "website",
+        "url": "https://mastra.ai",
+        "source": "https://github.com/mastra-ai/mastra"
+      }
+    ],
+    "MCP 2026-07-28": [
+      {
+        "kind": "website",
+        "url": "https://modelcontextprotocol.io",
+        "source": "https://github.com/modelcontextprotocol"
+      }
+    ],
+    "Megatron-LM": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/quickstart.html",
+        "source": "https://github.com/NVIDIA/Megatron-LM"
+      }
+    ],
+    "Mem0": [
+      {
+        "kind": "website",
+        "url": "https://mem0.ai",
+        "source": "https://github.com/mem0ai/mem0"
+      }
+    ],
+    "MemoryOS": [
+      {
+        "kind": "website",
+        "url": "https://baijia.online/memoryos/",
+        "source": "https://github.com/BAI-LAB/MemoryOS"
+      }
+    ],
+    "MemOS": [
+      {
+        "kind": "website",
+        "url": "https://memos.openmem.net",
+        "source": "https://github.com/MemTensor/MemOS"
+      }
+    ],
+    "Microsoft Agent Framework": [
+      {
+        "kind": "website",
+        "url": "https://aka.ms/agent-framework",
+        "source": "https://github.com/microsoft/agent-framework"
+      }
+    ],
+    "MiniMax": [
+      {
+        "kind": "website",
+        "url": "https://www.minimax.io",
+        "source": "https://github.com/MiniMax-AI"
+      }
+    ],
+    "Mistral": [
+      {
+        "kind": "website",
+        "url": "https://mistral.ai/",
+        "source": "https://mistral.ai/"
+      }
+    ],
+    "MLC-LLM": [
+      {
+        "kind": "website",
+        "url": "https://llm.mlc.ai/",
+        "source": "https://github.com/mlc-ai/mlc-llm"
+      }
+    ],
+    "Moby": [
+      {
+        "kind": "website",
+        "url": "https://mobyproject.org/",
+        "source": "https://github.com/moby/moby"
+      }
+    ],
+    "ModelScope": [
+      {
+        "kind": "website",
+        "url": "https://www.modelscope.cn/",
+        "source": "https://github.com/modelscope/modelscope"
+      }
+    ],
+    "Mooncake": [
+      {
+        "kind": "website",
+        "url": "https://kvcache-ai.github.io/Mooncake/",
+        "source": "https://github.com/kvcache-ai/Mooncake"
+      }
+    ],
+    "Mooncake TE": [
+      {
+        "kind": "website",
+        "url": "https://kvcache-ai.github.io/Mooncake/",
+        "source": "https://github.com/kvcache-ai/Mooncake"
+      }
+    ],
+    "NATS": [
+      {
+        "kind": "website",
+        "url": "https://nats.io",
+        "source": "https://github.com/nats-io/nats-server"
+      }
+    ],
+    "Nemotron": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.nvidia.com/nemotron/latest/index.html",
+        "source": "https://github.com/NVIDIA-NeMo/Nemotron"
+      }
+    ],
+    "NVIDIA GPU Operator": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html",
+        "source": "https://github.com/NVIDIA/gpu-operator"
+      }
+    ],
+    "Obelisk": [
+      {
+        "kind": "website",
+        "url": "https://obelisk.antinomie.org",
+        "source": "https://github.com/tommy0103/obelisk"
+      }
+    ],
+    "OCI Distribution 1.1": [
+      {
+        "kind": "website",
+        "url": "https://opencontainers.org",
+        "source": "https://github.com/opencontainers/distribution-spec"
+      }
+    ],
+    "OCI Image 1.1": [
+      {
+        "kind": "website",
+        "url": "https://opencontainers.org/",
+        "source": "https://github.com/opencontainers/image-spec"
+      }
+    ],
+    "OCI Runtime 1.3": [
+      {
+        "kind": "website",
+        "url": "https://opencontainers.org",
+        "source": "https://github.com/opencontainers/runtime-spec"
+      }
+    ],
+    "Octop": [
+      {
+        "kind": "website",
+        "url": "https://octop.cloud",
+        "source": "https://github.com/TencentCloud/Octop"
+      }
+    ],
+    "OLMo": [
+      {
+        "kind": "website",
+        "url": "https://allenai.org/olmo",
+        "source": "https://allenai.org/olmo"
+      }
+    ],
+    "Omarchy": [
+      {
+        "kind": "website",
+        "url": "https://omarchy.org",
+        "source": "https://github.com/omacom/omarchy"
+      }
+    ],
+    "ONNX": [
+      {
+        "kind": "website",
+        "url": "https://onnx.ai/",
+        "source": "https://github.com/onnx/onnx"
+      }
+    ],
+    "OPA / Rego": [
+      {
+        "kind": "website",
+        "url": "https://www.openpolicyagent.org",
+        "source": "https://github.com/open-policy-agent/opa"
+      }
+    ],
+    "Open WebUI": [
+      {
+        "kind": "website",
+        "url": "https://openwebui.com",
+        "source": "https://github.com/open-webui/open-webui"
+      }
+    ],
+    "OpenAgents": [
+      {
+        "kind": "website",
+        "url": "https://openagents.org",
+        "source": "https://github.com/openagents-org/openagents"
+      }
+    ],
+    "OpenBao": [
+      {
+        "kind": "website",
+        "url": "https://openbao.org/",
+        "source": "https://github.com/openbao/openbao"
+      }
+    ],
+    "OpenClaw": [
+      {
+        "kind": "website",
+        "url": "https://openclaw.ai",
+        "source": "https://github.com/openclaw/openclaw"
+      }
+    ],
+    "openEuler": [
+      {
+        "kind": "website",
+        "url": "https://www.openeuler.org/en/",
+        "source": "https://www.openeuler.org/en/"
+      }
+    ],
+    "OpenFab": [
+      {
+        "kind": "website",
+        "url": "https://open-fab.ai",
+        "source": "https://github.com/Open-fab-ai/openfab"
+      }
+    ],
+    "OpenFGA": [
+      {
+        "kind": "website",
+        "url": "https://openfga.dev",
+        "source": "https://github.com/openfga/openfga"
+      }
+    ],
+    "OpenHands": [
+      {
+        "kind": "website",
+        "url": "https://openhands.dev",
+        "source": "https://github.com/OpenHands/OpenHands"
+      }
+    ],
+    "OpenHarmony": [
+      {
+        "kind": "website",
+        "url": "https://www.openharmony.cn/",
+        "source": "https://www.openharmony.cn/"
+      }
+    ],
+    "openJiuwen": [
+      {
+        "kind": "website",
+        "url": "https://www.openjiuwen.com",
+        "source": "https://github.com/openJiuwen-ai"
+      }
+    ],
+    "OpenTelemetry": [
+      {
+        "kind": "website",
+        "url": "https://opentelemetry.io",
+        "source": "https://github.com/open-telemetry"
+      }
+    ],
+    "openvela": [
+      {
+        "kind": "website",
+        "url": "https://iot.mi.com/vela",
+        "source": "https://github.com/open-vela"
+      }
+    ],
+    "PEFT": [
+      {
+        "kind": "documentation",
+        "url": "https://huggingface.co/docs/peft",
+        "source": "https://github.com/huggingface/peft"
+      }
+    ],
+    "PenguinHarness": [
+      {
+        "kind": "website",
+        "url": "https://penguin.ooo/",
+        "source": "https://github.com/Prism-Shadow/penguin-harness"
+      }
+    ],
+    "Phoenix": [
+      {
+        "kind": "website",
+        "url": "https://arize.com/phoenix/",
+        "source": "https://arize.com/phoenix/"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://arize.com/docs/phoenix",
+        "source": "https://github.com/Arize-ai/phoenix"
+      }
+    ],
+    "PhyAgentOS": [
+      {
+        "kind": "website",
+        "url": "https://phy-agent-os.x-era.com/",
+        "source": "https://github.com/PhyAgentOS/PhyAgentOS-core"
+      }
+    ],
+    "Playwright": [
+      {
+        "kind": "website",
+        "url": "https://playwright.dev",
+        "source": "https://github.com/microsoft/playwright"
+      }
+    ],
+    "promptfoo": [
+      {
+        "kind": "website",
+        "url": "https://promptfoo.dev",
+        "source": "https://github.com/promptfoo/promptfoo"
+      }
+    ],
+    "Pydantic AI": [
+      {
+        "kind": "website",
+        "url": "https://pydantic.dev/pydantic-ai",
+        "source": "https://github.com/pydantic/pydantic-ai"
+      }
+    ],
+    "Pyodide": [
+      {
+        "kind": "website",
+        "url": "https://pyodide.org/en/stable/",
+        "source": "https://github.com/pyodide/pyodide"
+      }
+    ],
+    "PyTorch": [
+      {
+        "kind": "website",
+        "url": "https://pytorch.org",
+        "source": "https://github.com/pytorch/pytorch"
+      }
+    ],
+    "Qwen": [
+      {
+        "kind": "website",
+        "url": "https://qwen.ai/",
+        "source": "https://github.com/QwenLM"
+      }
+    ],
+    "Ragas": [
+      {
+        "kind": "website",
+        "url": "https://www.ragas.io/",
+        "source": "https://www.ragas.io/"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://docs.ragas.io",
+        "source": "https://github.com/vibrantlabsai/ragas"
+      }
+    ],
+    "RAGEN": [
+      {
+        "kind": "website",
+        "url": "https://ragen-ai.github.io/",
+        "source": "https://github.com/mll-lab-nu/RAGEN"
+      }
+    ],
+    "Rig": [
+      {
+        "kind": "website",
+        "url": "https://rig.rs",
+        "source": "https://github.com/0xPlaygrounds/rig"
+      }
+    ],
+    "Robrix": [
+      {
+        "kind": "website",
+        "url": "https://robrix.app",
+        "source": "https://github.com/project-robius/robrix"
+      }
+    ],
+    "ROCm": [
+      {
+        "kind": "documentation",
+        "url": "https://rocm.docs.amd.com",
+        "source": "https://github.com/ROCm"
+      }
+    ],
+    "Safetensor": [
+      {
+        "kind": "documentation",
+        "url": "https://huggingface.co/docs/safetensors",
+        "source": "https://github.com/safetensors/safetensors"
+      }
+    ],
+    "SGLang": [
+      {
+        "kind": "website",
+        "url": "https://sglang.io",
+        "source": "https://github.com/sgl-project/sglang"
+      }
+    ],
+    "Sigstore": [
+      {
+        "kind": "website",
+        "url": "https://sigstore.dev",
+        "source": "https://github.com/sigstore/sigstore"
+      }
+    ],
+    "SkyRL": [
+      {
+        "kind": "documentation",
+        "url": "https://docs.skyrl.ai/docs",
+        "source": "https://github.com/NovaSky-AI/SkyRL"
+      }
+    ],
+    "Slurm": [
+      {
+        "kind": "website",
+        "url": "https://slurm.schedmd.com/",
+        "source": "https://github.com/SchedMD/slurm"
+      }
+    ],
+    "SPDK": [
+      {
+        "kind": "website",
+        "url": "https://spdk.io/",
+        "source": "https://github.com/spdk/spdk"
+      }
+    ],
+    "SPIFFE": [
+      {
+        "kind": "website",
+        "url": "https://spiffe.io",
+        "source": "https://github.com/spiffe/spiffe"
+      }
+    ],
+    "SPIRE": [
+      {
+        "kind": "website",
+        "url": "https://spiffe.io",
+        "source": "https://github.com/spiffe/spire"
+      }
+    ],
+    "Temporal": [
+      {
+        "kind": "website",
+        "url": "https://temporal.io/",
+        "source": "https://temporal.io/"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://docs.temporal.io",
+        "source": "https://github.com/temporalio/temporal"
+      }
+    ],
+    "TileLang": [
+      {
+        "kind": "website",
+        "url": "https://tilelang.com/",
+        "source": "https://github.com/tile-ai/tilelang"
+      }
+    ],
+    "torchtune": [
+      {
+        "kind": "documentation",
+        "url": "https://pytorch.org/torchtune/main/",
+        "source": "https://github.com/meta-pytorch/torchtune"
+      }
+    ],
+    "Triton": [
+      {
+        "kind": "website",
+        "url": "https://triton-lang.org/",
+        "source": "https://github.com/triton-lang/triton"
+      }
+    ],
+    "TRL": [
+      {
+        "kind": "documentation",
+        "url": "https://huggingface.co/docs/trl",
+        "source": "https://github.com/huggingface/trl"
+      }
+    ],
+    "TuyaOpen": [
+      {
+        "kind": "website",
+        "url": "https://tuyaopen.ai",
+        "source": "https://github.com/tuya/TuyaOpen"
+      }
+    ],
+    "UCM": [
+      {
+        "kind": "documentation",
+        "url": "https://ucm.readthedocs.io/en/latest/",
+        "source": "https://github.com/ModelEngine-Group/unified-cache-management"
+      }
+    ],
+    "UCX": [
+      {
+        "kind": "website",
+        "url": "https://openucx.org",
+        "source": "https://github.com/openucx/ucx"
+      }
+    ],
+    "UI-TARS Desktop": [
+      {
+        "kind": "website",
+        "url": "https://agent-tars.com",
+        "source": "https://github.com/bytedance/UI-TARS-desktop"
+      }
+    ],
+    "Unsloth": [
+      {
+        "kind": "documentation",
+        "url": "https://unsloth.ai/docs",
+        "source": "https://github.com/unslothai/unsloth"
+      }
+    ],
+    "Vault": [
+      {
+        "kind": "website",
+        "url": "https://www.hashicorp.com/en/products/vault",
+        "source": "https://www.hashicorp.com/en/products/vault"
+      },
+      {
+        "kind": "documentation",
+        "url": "https://developer.hashicorp.com/vault",
+        "source": "https://github.com/hashicorp/vault"
+      }
+    ],
+    "verl": [
+      {
+        "kind": "website",
+        "url": "https://verl-project.github.io",
+        "source": "https://github.com/verl-project/verl"
+      }
+    ],
+    "vLLM": [
+      {
+        "kind": "website",
+        "url": "https://vllm.ai",
+        "source": "https://github.com/vllm-project/vllm"
+      }
+    ],
+    "Volcano": [
+      {
+        "kind": "website",
+        "url": "https://volcano.sh",
+        "source": "https://github.com/volcano-sh/volcano"
+      }
+    ],
+    "WASI": [
+      {
+        "kind": "website",
+        "url": "https://wasi.dev/",
+        "source": "https://wasi.dev/"
+      }
+    ],
+    "Wasmtime": [
+      {
+        "kind": "website",
+        "url": "https://wasmtime.dev/",
+        "source": "https://github.com/bytecodealliance/wasmtime"
+      }
+    ],
+    "Zenoh": [
+      {
+        "kind": "website",
+        "url": "https://zenoh.io",
+        "source": "https://github.com/eclipse-zenoh/zenoh"
+      }
+    ],
+    "ZeroClaw": [
+      {
+        "kind": "website",
+        "url": "https://www.zeroclaw.com/",
+        "source": "https://github.com/zeroclaw-labs/zeroclaw"
+      }
+    ]
+  }
+}
